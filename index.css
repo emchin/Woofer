@@ -2,7 +2,7 @@ body {
 	background-color: #FF7C5D;
 }
 
-#main_buttons {
+#main-buttons {
 	display: flex;
     	flex-wrap: wrap;
     	padding: 0 4px;

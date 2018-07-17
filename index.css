@@ -2,7 +2,7 @@ body {
 	background-color: #FF7C5D;
 }
 
-#main-buttons {
+#main-button {
 	text-align: center;
 	display: flex;
     	flex-wrap: wrap;

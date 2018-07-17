@@ -1,3 +1,7 @@
 body {
 	background-color: #FF7C5D;
 }
+
+#main-buttons {
+	margin-left: -50px;
+}

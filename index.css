@@ -2,6 +2,10 @@ body {
 	background-color: #FF7C5D;
 }
 
-#main-buttons {
+#logIn-button {
 	margin-left: -50px;
+}
+
+#identify-button {
+	margin-right: -50px;
 }

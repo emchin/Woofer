@@ -11,4 +11,5 @@ body {
 
 @media only screen and (max-width: 900px){
 	body {background-color: #000000};
+	#main-button{height:500%;width:500%}
 }

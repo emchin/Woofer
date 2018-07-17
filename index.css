@@ -3,6 +3,7 @@ body {
 }
 
 #main-buttons {
+	text-align: center;
 	display: flex;
     	flex-wrap: wrap;
     	padding: 0 40px;

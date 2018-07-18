@@ -8,8 +8,7 @@
   <title>Woofer - Identify a dog</title>
 </head>
 <body>
-  <center>
-    <img id="big-logo" alt="Dog Logo" src="WooferLogo.jpg" width="20%" height="20%" onclick="window.open('index.html', '_blank');">
+    <img id="big-logo" alt="Dog Logo" src="WooferLogo.jpg" width="20%" height="20%">
     <br>
     <br>
     <br>
@@ -20,8 +19,10 @@
       <br>
       <br>
       
-    <div class="identify-dog" padding=70px background-color=white>
-
+    <div class="identify-dog" padding=150px background-color=white>
+      <br>
+      <br>
+      <div class="user-input">
        Zipcode found: <input type="zipcode" name="zipcode">
        <br>
         Owner's name: <input type="ownerName" name="ownerName">
@@ -31,6 +32,7 @@
         Your contact information (for owner to claim dog): <input type="contactInfo" name="contactInfo">
         <br>
         <br>
+      </div>
       Size:
       <br>    
         <form action="/action_page.php">
@@ -95,6 +97,5 @@
         <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
       <div>
     </form>
-  </center>
 </body>
 </html>

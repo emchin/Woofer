@@ -9,7 +9,7 @@ body {
 }
 
 @media only screen and (max-width: 800px){
-	.main-button{text-align:center;display:flex;flex-wrap:wrap;width:0.01%;height:0.01%;}
+	.main-button{text-align:center;display:flex;flex-wrap:wrap;width:50%;height:50%;}
 	#big-logo{width:20%;}
 	body{background-color: #FF7C5D;}
 }

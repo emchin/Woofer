@@ -6,10 +6,11 @@ body {
 	text-align: center;
 	display: flex;
     	flex-wrap: wrap;
+	padding-bottom:50%;
 }
 
 @media only screen and (max-width: 1100px){
-	.main-button{text-align:center;display:flex;flex-wrap:wrap;width:25%;height:25%;}
+	.main-button{text-align:center;display:flex;flex-wrap:wrap;width:25%;height:25%;padding-bottom:20%;}
 	#big-logo{width:200%;height:200%}
 	body{background-color: #FF7C5D;}
 }

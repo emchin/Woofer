@@ -11,4 +11,5 @@ body {
 @media only screen and (max-width: 600px){
 	.main-button{text-align:center;display:flex;flex-wrap:wrap;height:1000%;width:600%}
 	#big-logo{max-width:100%;}
+	body{background-color: #FF7C5D;}
 }

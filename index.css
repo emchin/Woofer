@@ -3,6 +3,10 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+#video {
+	background-color:white;
+}
+
 .main-button {
 	text-align: center;
 	display: flex;

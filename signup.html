@@ -17,20 +17,30 @@
     <br>
     <form>
       <div>
-        <b>Input a username:</b> <input type="text" name="username">
+        <b>Input a username:</b> <input type="text" name="username" id="username">
       </div>
       <br>
       <div>
-        <b>Input a password: </b><input type="password" name="password">
+        <b>Input a password: </b><input type="password" name="password" id="password">
       </div>
       <br>
       <div>
-        <b>Confirm password:</b> <input type="password" name="password">
+        <b>Confirm password:</b> <input type="password" name="password2">
       </div>
       <br>
+      <script>
+        var person = {};
+        var name = document.getElementById("username").value;
+        var pass = document.getElementById("password").value;
+        person[name]["name"] = name;
+        person[name]["password"] = pass;
+        document.getElementById("check").innerHTML = pass;
+      </script>
       <br>
       <div>
         <button onclick="window.open('doneAcct.html', '_blank');">Submit</button>
+      </div>
+      <div id="check"></div>
       <br>
     </form>
   </center>

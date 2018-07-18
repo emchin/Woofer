@@ -4,7 +4,6 @@ function new_user() {
           var pass = document.getElementById('password').value;
           user_database[name] = pass;
       }
-document.getElementById('submit').addEventListener('click', say_hi);
 
 function check_user() {
           var maybe_user = document.getElementById('user-user').value;

@@ -3,6 +3,7 @@ function new_user() {
           var name = document.getElementById('username').value;
           var pass = document.getElementById('password').value;
           user_database[name] = pass;
+          document.getElementById("test").innerHTML = "hello";
       }
 
 function check_user() {

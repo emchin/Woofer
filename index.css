@@ -14,8 +14,12 @@ body {
 }
 
 .identify-dog{
-	padding: 0px;
+	padding: 20px;
 	background-color:white;
+}
+
+.user-input{
+	float: right;
 }
 
 @media only screen and (max-width: 1100px){

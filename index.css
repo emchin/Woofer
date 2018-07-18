@@ -9,6 +9,5 @@ body {
 }
 
 @media only screen and (max-width: 600px){
-	body {background-color: #000000};
-	.main-button{text-align:center;display:flex;flex-wrap:wrap;height:200%;width:200%}
+	.main-button{text-align:center;display:flex;flex-wrap:wrap;height:1000%;width:600%}
 }

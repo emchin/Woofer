@@ -29,16 +29,16 @@
       </div>
       <br>
       <script>
-        var person = {};
-        var name = document.getElementById("username").value;
-        var pass = document.getElementById("password").value;
-        person[name]["name"] = name;
-        person[name]["password"] = pass;
-        document.getElementById("check").innerHTML = pass;
+        function store_data() {
+          var name = document.getElementById('username').value;
+          var pass = document.getElementById('password').value;
+          document.getElementById("check").innerHTML = name + " " + pass;
+      }
+      document.getElementById('submit').addEventListener('click', store_data);
       </script>
       <br>
       <div>
-        <button onclick="window.open('doneAcct.html', '_blank');">Submit</button>
+        <button id="submit">Submit</button>
       </div>
       <div id="check"></div>
       <br>

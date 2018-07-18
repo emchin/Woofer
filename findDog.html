@@ -9,18 +9,17 @@
 </head>
 <body>
   <center>
-    <img id="big-logo" alt="Dog Logo" src="WooferLogo.jpg" width="20%" height="20%">
+    <img id="big-logo" alt="Dog Logo" src="WooferLogo.jpg" width="50%" height="50%">
     <br>
     <br>
     <form>
       <br>
-      <img id="big-logo" alt="Found A Dog" src="foundDog.jpg" width="40%" height="40%">
+      Found a dog?
       <br>
       Help reunite it with its human by providing the answers you know
       <br>
       <div class="identify-dog">
-      Breed: <input type="dogBreed" name="dogBreed">
-      <br>
+
        Zipcode found: <input type="zipcode" name="zipcode">
        <br>
         Owner's name: <input type="ownerName" name="ownerName">
@@ -48,13 +47,37 @@
       Eye color:
       <br>    
         <form action="/action_page.php">
-          <select name="dog-sizes" multiple>
+          <select name="dog-eye-colors" multiple>
             <option value="brown">brown</option>
             <option value="blue">blue</option>
             <option value="hazel">hazel</option>
             <option value="gold">gold</option>
             <option value="heterochromic">heterochromic</option>
             <option value="Other">other</option>
+          </select>
+      </form>        
+        
+   <br>
+   <br>
+    Coat Colors:
+   <form action="/action_page.php">
+      <input type="checkbox" name="color1" value="light-brown"> light brown<br>
+      <input type="checkbox" name="color2" value="dark-brown"> dark brown<br>
+      <input type="checkbox" name="color3" value="golden"> golden<br>
+      <input type="checkbox" name="color4" value="tan"> tan<br>
+      <input type="checkbox" name="color5" value="white"> white<br>
+      <input type="checkbox" name="color6" value="black"> black<br>
+      <input type="checkbox" name="color7" value="other" checked> other<br><br>
+      <input type="submit" value="Submit">
+    </form>
+      Coat pattern:
+      <br>    
+        <form action="/action_page.php">
+          <select name="dog-pattern" multiple>
+
+            <option value="solid tan">solid-tan</option>
+            <option value="solid tan">solid-tan</option>
+
           </select>
       </form>        
          

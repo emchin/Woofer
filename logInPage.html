@@ -5,6 +5,7 @@
   <link rel="icon" href="WooferWindowLogo.jpg">
   <link rel="stylesheet" href="index.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <style src="index.src"></style>
   <title>Woofer - Sign Up</title>
 </head>
 <body>
@@ -27,8 +28,13 @@
       </div>
       <div>
         <br>
-        <button onclick="window.open('introAcct.html', '_blank');">Submit</button>
-      <br>
+        <button onclick="window.open('introAcct.html', '_blank');" id='submit'>Submit</button>
+        <br>
+      </div>
+      <script>
+        document.getElementById('submit').addEventListener('click', check_user);
+      </script>
+      <div></div>
     </form>
   </center>
 </body>

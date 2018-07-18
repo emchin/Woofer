@@ -3,15 +3,6 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background: #111;
-}
-
 .main-button {
 	text-align: center;
 	display: flex;

@@ -1,7 +1,3 @@
-head {
-	background-color: #000000;
-}
-
 body {
 	background-color: #FF7C5D;
 }
@@ -22,4 +18,5 @@ body {
 	.main-space{width:100%;height: 100%;}
 	#big-logo{height:200%}
 	body{background-color: #FF7C5D;}
+	head{background-color: #000000;}
 }

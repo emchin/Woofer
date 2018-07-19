@@ -6,8 +6,12 @@ function new_user() {
           document.getElementById("test").innerHTML = "hello";
       }
 
-function check_user() {
-          var maybe_user = document.getElementById('user-user').value;
-          var maybe_pass = document.getElementById('user-pass').value;
-          document.getElementById("test").innerHTML = "You logged in.";
+var user_database = {}
+function new_user() {
+          var user_name = document.getElementById('username').value;
+          var pass = document.getElementById('password').value;
+          user_database[user_name] = pass;
+          //global.localStorage.setItem("user_database", user_database);
+          window.open("doneAcct.html");
       }
+        document.getElementById("submit").addEventListener('click', new_user);

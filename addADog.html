@@ -89,9 +89,7 @@
        <br>
        <br> 
       
-    <form action= window.open(feed.html)> 
-  			<button type="Submit">Submit</button>
-		</form> 
+    <button id="submit">Submit 4</button>
 
 
      <script>
@@ -100,10 +98,9 @@
           var zipcode = document.getElementByName('zipcode').value;
           var ownerName = document.getElementByName('ownerName').value;
           localStorage.setItem(zipcode, ownerName);
-          window.open("https://emchin.github.io/Woofer/feed.html");
+          window.open("feed.html");
       }
         document.getElementById("submit").addEventListener('click', new_dog);
-        document.getElementById("submit").onclick = function() {new_dog()};  
 
       </script>
 

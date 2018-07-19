@@ -95,8 +95,8 @@
         function new_dog() {
           window.alert(10);
           var zipcode = document.getElementsByName("zipcode").value;
-          //var ownerName = document.getElementByName('ownerName').value;
-          //localStorage.setItem(zipcode, ownerName);
+          var ownerName = document.getElementsByName("ownerName").value;
+          localStorage.setItem(zipcode, ownerName);
           window.alert(20);
           window.open("feed.html");
       }

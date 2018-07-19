@@ -100,13 +100,13 @@
     <button id="submit">Submit </button>
 
      <script>
-        function new_dog() {
-          var zipcode = document.getElementByName('zipcode').value;
-          var ownerName = document.getElementByName('ownerName').value;
-          localStorage.setItem(zipcode, ownerName);
+        function new_user() {
+          var user_name = document.getElementById('username').value;
+          var pass = document.getElementById('password').value;
+          localStorage.setItem(user_name, pass);
           window.open("feed.html");
       }
-        document.getElementById("submit").addEventListener('click', new_dog);
+        document.getElementById("submit").addEventListener('click', new_user);
       </script>
   </center>
 </body>

@@ -10,8 +10,16 @@
     <img id="big-logo" alt="Dog Logo" src="WooferLogo.jpg" width="20%" height="20%" onclick="window.open('index.html', '_blank');">
     <br>
     <br>
+    <script>
     name: dogName
     owner: dogName[0]
+    </script>
+    
+    window.onload=function(){
+       document.getElementById("myLink").innerHTML=dogName[0];
+}
+    
+    <p id = "myLink"><>
   </center>
 </head>
 <body>

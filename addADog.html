@@ -89,11 +89,12 @@
        <br>
        <br> 
       
-    <button id="submit" onclick = "new_dog()">Submit 2</button>
+    <button id="submit" onclick = "new_dog()">Submit 3</button>
 
 
      <script>
         function new_dog() {
+          window.alert(5)
           var zipcode = document.getElementByName('zipcode').value;
           var ownerName = document.getElementByName('ownerName').value;
           localStorage.setItem(zipcode, ownerName);

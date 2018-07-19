@@ -1,1 +1,97 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="WooferWindowLogo.jpg">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <title>Woofer - Identify A Dog</title>
+</head>
+  
+<body>
+  <center>
+    <img id="big-logo" alt="Dog Logo" src="WooferLogo.jpg" width="20%" height="20%" onclick="window.open('index.html', '_blank')>
+    <br>
+    <img alt="Found a Dog?" src="foundDog.jpg" width="40%" height="40%">
+    <br>
+    <br>
+    <img alt="Help reunite it with its human by providing the answers you know. " src="foundInstr.jpg" width="70%" height="70%">                                                                                                                                                                                                                                                     
+    <br>    
+                                                                                                                               
+    Dog Identification Form                         
+    <br>
+    <div class="user-input">
+      Zipcode (of the dog's last known location) : <input type="zipcode" name="zipcode">
+      <br>
+      Owner's Name: <input type="ownerName" name="ownerName">
+      <br>
+      Dog's Name: <input type="dogName" name="dogName">
+      <br>
+      Your Contact Information (phone number, email, etc.): <input type="contactInfo" name="contactInfo">
+      <br>
+                                                                                                        
+      <br>
+      <br>
+      Coat Colors:
+        <form action="/action_page.php">
+          <input type="checkbox" name="color1" value="Light-Brown"> Light Brown<br>
+          <input type="checkbox" name="color2" value="Dark-Brown"> Dark Brown<br>
+          <input type="checkbox" name="color3" value="Golden"> Golden<br>
+          <input type="checkbox" name="color4" value="Tan"> Tan<br>
+          <input type="checkbox" name="color5" value="White"> White<br>
+          <input type="checkbox" name="color6" value="Black"> Black<br>
+          <input type="checkbox" name="color7" value="Other"> Other<br><br>
+        </form>
+    </div>
+                                                            
+    <div>
+      Size:
+      <br>    
+        <form action="/action_page.php">
+          <select name="dog-sizes" multiple>
+            <option value="Small">Less than 10lbs</option>
+            <option value="Small-Medium">10-20lbs</option>
+            <option value="Medium">20-40lbs</option>
+            <option value="Medium-large">40-60lbs</option>
+            <option value="Large">60+lbs</option>
+          </select>                     
+        </form>
+       <br>
+       <br>
+       Eye color:
+       <br>    
+         <form action="/action_page.php">
+           <select name="dog-eye-colors" multiple>
+             <option value="brown">Brown</option>
+             <option value="Blue">Blue</option>
+             <option value="Hazel">Hazel</option>
+             <option value="Gold">Gold</option>
+             <option value="Heterochromic">Heterochromic</option>
+             <option value="Other">Other</option>
+           </select>
+          </form>        
+       <br>
+       Coat pattern:
+        <br>    
+          <form action="/action_page.php">
+            <select name="dog-pattern" multiple>
+              <option value="Solid">Solid</option>
+              <option value="Bicolor">Bicolor</option>
+              <option value="Tricolor">Tricolor</option>
+              <option value="Merle">Merle</option>
+              <option value="Tuxedo">Tuxedo</option>
+              <option value="Spotted">Spotted</option>
+              <option value="Speckled">Speckled</option>
+              <option value="Sable">Sable</option>
+              <option value="Other">Other</option>
+            </select>
+          </form> 
+  </center>
+  </div>
+  <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
+  <br>
+  <br>                                                                                        
+  <button class = "main-button" onclick="window.open('feed.html', '_blank');">Submit</button>
+</div>                                                                             
+</body>
+</html>

@@ -29,11 +29,11 @@ body {
 @media only screen and (max-width: 1100px){
 	.main-button{text-align:center;display:flex;flex-wrap:wrap;width:70%;height:20%;}
 	.identify-dog{float:none;width:90%;}
-	.main-title{width:200%;height: 200%;}
+	.main-title{width:250%;height: 250%;}
 	.main-click:hover{box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
 	.main-space{width:100%;height: 100%;}
 	.create-account{text-align:center;display:flex;flex-wrap:wrap;width:100%;padding-bottom:10%;}
-	.foundInstrTxt{width:200%;height: 200%;}
+	.foundInstrTxt{width:300%;height: 300%;}
 	#big-logo{height:200%}
 	body{background-color: #FF7C5D;}
 }

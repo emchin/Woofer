@@ -30,14 +30,15 @@
       <br>
       <br>
       <div>
-        <button id="submit" onclick="window.open('doneAcct.html');">Submit</button>
+        <button id="submit">Submit</button>
       </div>
       <script>
         function new_user() {
-          var user_database = {}
+          var user_database = {};
           var user_name = document.getElementById('username').value;
           var pass = document.getElementById('password').value;
           user_database[user_name] = pass;
+          window.open("doneAcct.html");
       }
         document.getElementById("submit").addEventListener('click', new_user);
       </script>

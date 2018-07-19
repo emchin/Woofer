@@ -35,13 +35,13 @@
 		window.open("introAcct.html");
 		var maybe_user = document.getElementById('user-user').value;
 		var maybe_pass = document.getElementById('user-pass').value;
-		//if(user_database[maybe_user] == maybe_pass){
-		//	document.getElementById("test").innerHTML = "You logged in.";
-		//	window.open("introAcct.html");
-		//} else {
-		//	document.getElementById("test").innerHTML = "Sorry, that's the wrong username/password. Please try again!"
-		//	window.open("introAcct.html");
-		//}
+		if(user_database[maybe_user] == maybe_pass){
+			document.getElementById("test").innerHTML = "You logged in.";
+			window.open("introAcct.html");
+		} else {
+			document.getElementById("test").innerHTML = "Sorry, that's the wrong username/password. Please try again!"
+			window.open("introAcct.html");
+		}
 	}
         	document.getElementById('submit').addEventListener('click', check_user);
       </script>

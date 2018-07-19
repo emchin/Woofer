@@ -34,10 +34,9 @@
       </div>
       <script>
         function new_user() {
-          var user_database = {};
           var user_name = document.getElementById('username').value;
           var pass = document.getElementById('password').value;
-          user_database[user_name] = pass;
+          localStorage.setItem(user_name, pass);
           window.open("doneAcct.html");
       }
         document.getElementById("submit").addEventListener('click', new_user);

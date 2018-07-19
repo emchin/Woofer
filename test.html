@@ -16,15 +16,15 @@
     <br>
     <img alt="Create an Account" src="createAccount.jpg" width="40%" height="40%" class="main-button">
     <br>
-   // Name and Password from the register-form
-var name = document.getElementById('name');
-var pw = document.getElementById('pw');
+    <script>
+      var name = document.getElementById('name');
+      var pw = document.getElementById('pw');
 
-// storing input from register-form
-function store() {
-    localStorage.setItem('name', name.value);
-    localStorage.setItem('pw', pw.value);
-}
+      function store() {
+          localStorage.setItem('name', name.value);
+          localStorage.setItem('pw', pw.value);
+      }
+    </script>
   </center>
 </body>
 </html>

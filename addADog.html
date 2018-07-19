@@ -47,7 +47,7 @@
       Size:
       <br>    
         <form action="/action_page.php">
-            <select name="dog-eye-colors" >
+            <select name="dog-size" >
 
             <option type="radio" value="Small">Less than 10lbs</option>
             <option type = "radio" value="Small-Medium">10-20lbs</option>
@@ -89,7 +89,7 @@
        <br>
        <br> 
       
-  <button type="button" id="submit">Submit 3</button>
+  <button type="button" id="submit">Submit 4</button>
 
      <script>
         function new_dog() {
@@ -109,6 +109,8 @@
           var color6 = document.getElementsByName("color6").checked;
           var color7 = document.getElementsByName("color7").checked;
           var eyecolor = document.getElementsByName("dog-eye-colors").value;
+          var eyecolor = document.getElementsByName("dog-pattern").value;
+          var eyecolor = document.getElementsByName("dog-size").value;
 
           dogName = [];
           window.open("feed.html");

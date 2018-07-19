@@ -37,7 +37,7 @@
           var maybe_pass = document.getElementById('user-pass').value;
           if(user_database[maybe_user].pass == maybe_pass){
             document.getElementById("test").innerHTML = "You logged in.";
-            setTimeout(window.open("introAcct.html"), 2000);
+            window.open("introAcct.html");
           } else {
             document.getElementById("test").innerHTML = "Sorry, that's the wrong username/password. Please try again!"
           }

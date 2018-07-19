@@ -16,35 +16,38 @@
     <br>
     <img alt="Create an Account" src="createAccount.jpg" width="40%" height="40%" class="main-button">
     <br>
-   
-    
-    <form action="action_page.php">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
-
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
-
-    
-    
-    
+    <form>
+      <div>
+        <b>Input a username:</b> <input type="text" name="username" id="username">
+      </div>
+      <br>
+      <div>
+        <b>Input a password: </b><input type="password" name="password" id="password">
+      </div>
+      <br>
+      <div>
+        <b>Confirm password:</b> <input type="password" name="password2">
+      </div>
+      <br>
+      <br>
+      <div>
+        <button id="submit">Submit</button>
+      </div>
+      <script>
+        var user_info = {}
+        function new_user() {
+          var user_name = document.getElementById('username').value;
+          var pass = document.getElementById('password').value;
+          user_info[user_name]["password"] = pass;
+          localStorage.setItem("user_check", user_info);
+          //global.localStorage.setItem("user_database", user_database);
+          window.open("doneAcct.html");
+      }
+        document.getElementById("submit").addEventListener('click', new_user);
+      </script>
+      <br>
+      <div id="test"></div>
+    </form> 
   </center>
 </body>
 </html>

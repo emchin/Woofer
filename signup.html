@@ -34,6 +34,13 @@
         <button id="submit" onclick="window.open('doneAcct.html');">Submit</button>
       </div>
       <script>
+        function new_user() {
+          var user_database = {}
+          var name = document.getElementById('username').value;
+          var pass = document.getElementById('password').value;
+          user_database[name] = pass;
+          document.getElementById("test").innerHTML = "hello";
+      }
         document.getElementById("submit").addEventListener('click', new_user);
       </script>
       <br>

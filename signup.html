@@ -38,8 +38,8 @@
         function new_user() {
           var user_name = document.getElementById('username').value;
           var pass = document.getElementById('password').value;
-          user_info[user_name]["password"] = pass;
-          localStorage.setItem("user_check", user_info);
+          var user_pass = user_name + "/" + pass;
+          localStorage.setItem("check_user", user_pass);
           //global.localStorage.setItem("user_database", user_database);
           window.open("doneAcct.html");
       }

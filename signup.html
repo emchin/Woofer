@@ -34,11 +34,12 @@
         <button id="submit">Submit</button>
       </div>
       <script>
-        var user_database = {}
+        var user_info = {}
         function new_user() {
           var user_name = document.getElementById('username').value;
           var pass = document.getElementById('password').value;
-          user_database[user_name] = pass;
+          user_info[user_name]["password"] = pass;
+          localStorage.setItem(user_check, user_info);
           //global.localStorage.setItem("user_database", user_database);
           window.open("doneAcct.html");
       }

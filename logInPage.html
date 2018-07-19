@@ -5,7 +5,7 @@
   <link rel="icon" href="WooferWindowLogo.jpg">
   <link rel="stylesheet" href="index.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <style src="index.src"></style>
+  <style src="index.js"></style>
   <title>Woofer - Sign Up</title>
 </head>
 <body>
@@ -32,6 +32,11 @@
         <br>
       </div>
       <script>
+        function check_user() {
+          var maybe_user = document.getElementById('user-user').value;
+          var maybe_pass = document.getElementById('user-pass').value;
+          document.getElementById("test").innerHTML = "You logged in.";
+      }
         document.getElementById('submit').addEventListener('click', check_user);
       </script>
       <div id="test"></div>

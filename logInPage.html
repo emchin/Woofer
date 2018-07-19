@@ -37,10 +37,10 @@
           var maybe_pass = document.getElementById('user-pass').value;
           if(global.document.getElementById("pass").innerHTML == maybe_pass){
             document.getElementById("test").innerHTML = "You logged in.";
-            window.open("introAcct.html", "Account");
+            window.open("introAcct.html");
           } else {
             document.getElementById("test").innerHTML = "Sorry, that's the wrong username/password. Please try again!"
-            window.open("introAcct.html", "Account");
+            window.open("introAcct.html");
           }
       }
         document.getElementById('submit').addEventListener('click', check_user);

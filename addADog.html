@@ -101,8 +101,9 @@
           window.open("feed.html");
       }
         document.getElementById("submit").addEventListener('click', new_dog);
+        document.getElementById("submit").onclick = function() {new_dog()};  
+
       </script>
- document.getElementById("submit").onclick = function() {new_dog()};  
 
   </center>
 </body>

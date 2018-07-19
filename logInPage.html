@@ -35,7 +35,12 @@
         function check_user() {
           var maybe_user = document.getElementById('user-user').value;
           var maybe_pass = document.getElementById('user-pass').value;
-          document.getElementById("test").innerHTML = "You logged in.";
+          if(user_database[maybe_user].pass == maybe_pass){
+            document.getElementById("test").innerHTML = "You logged in.";
+            setTimeout(window.open("introAcct.html"), 2000);
+          } else {
+            document.getElementById("test").innerHTML = "Sorry, that's the wrong username/password. Please try again!"
+          }
       }
         document.getElementById('submit').addEventListener('click', check_user);
       </script>

@@ -89,14 +89,17 @@
       <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
        <br>
        <br> 
+      
+<button id="submit">Submit testing</button>
+
      <script>
-        function new_user() {
+        function new_dog() {
           var zipcode = document.getElementByName('zipcode').value;
           var ownerName = document.getElementByName('ownerName').value;
           localStorage.setItem(zipcode, ownerName);
           window.open("feed.html");
       }
-        document.getElementById("submit").addEventListener('click', new_user);
+        document.getElementById("submit").addEventListener('click', new_dog);
       </script>
   </center>
 </body>

@@ -5,6 +5,7 @@
   <link rel="icon" href="WooferWindowLogo.jpg">
   <link rel="stylesheet" href="index.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="index.js"></script>
   <title>Woofer - Sign Up</title>
 </head>
 <body>
@@ -34,7 +35,7 @@
         function check_user() {
           var maybe_user = document.getElementById('user-user').value;
           var maybe_pass = document.getElementById('user-pass').value;
-          if(user_database[maybe_user] == maybe_pass){
+          if(document.getElementById("pass").innerHTML == maybe_pass){
             document.getElementById("test").innerHTML = "You logged in.";
             window.open("introAcct.html");
           } else {

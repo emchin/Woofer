@@ -91,22 +91,23 @@
               <option type="radio" value="Other">Other</option>
             </select>
           </form> 
-      <br>
-      <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
-       <br>
-       <br> 
+        <br>
+        <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
+        <br>
+        <br> 
       
-    <button id="submit">Submit </button>
+	    <button id="submit">Submit </button>
+    </div>
 
      <script>
-        function new_user() {
-          var user_name = document.getElementById('username').value;
-          var pass = document.getElementById('password').value;
-          localStorage.setItem(user_name, pass);
-          window.open("feed.html");
+     	function new_user() {
+				var user_name = document.getElementById('username').value;
+        var pass = document.getElementById('password').value;
+        localStorage.setItem(user_name, pass);
+        window.open("feed.html");
       }
-        document.getElementById("submit").addEventListener('click', new_user);
-      </script>
+      document.getElementById("submit").addEventListener('click', new_user);
+     </script>
   </center>
 </body>
 </html>

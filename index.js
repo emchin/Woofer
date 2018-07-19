@@ -9,7 +9,5 @@ function new_user() {
 function check_user() {
           var maybe_user = document.getElementById('user-user').value;
           var maybe_pass = document.getElementById('user-pass').value;
-          if (user_database[maybe_user] == maybe_pass){
-              document.getElementById("test").innerHTML = "You logged in.";
-          }
+          document.getElementById("test").innerHTML = "You logged in.";
       }

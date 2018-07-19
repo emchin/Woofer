@@ -89,7 +89,7 @@
        <br>
        <br> 
       
-  <button type="button" id="submit">Submit 10</button>
+  <button type="button" id="submit">Submit</button>
 
      <script>
         function new_dog() {
@@ -102,12 +102,13 @@
           var 
           localStorage.setItem(zipcode, ownerName);
           var color1 = document.getElementById("color1").checked;
-          var color2 = document.getElementById("color3").checked;
+          var color2 = document.getElementById("color2").checked;
           var color3 = document.getElementById("color3").checked;
           var color4 = document.getElementById("color4").checked;
           var color5 = document.getElementById("color5").checked;
           var color6 = document.getElementById("color6").checked;
           var color7 = document.getElementById("color7").checked;
+          var eyecolor = document.getElementsbyName("dog-eye-color").value;
 
           dogName = [];
           window.open("feed.html");

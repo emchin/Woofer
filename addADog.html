@@ -93,11 +93,23 @@
 
      <script>
         function new_dog() {
-          window.alert(10);
+          var dogName = document.getElementsByName("dogName").value;
+          dogName = [];
+          
           var zipcode = document.getElementsByName("zipcode").value;
           var ownerName = document.getElementsByName("ownerName").value;
+          var contactInfo = document.getElementsByName("contactInfo").value;
+          var 
           localStorage.setItem(zipcode, ownerName);
-          window.alert(20);
+          var color1 = document.getElementById("color1").checked;
+          var color2 = document.getElementById("color3").checked;
+          var color3 = document.getElementById("color3").checked;
+          var color4 = document.getElementById("color4").checked;
+          var color5 = document.getElementById("color5").checked;
+          var color6 = document.getElementById("color6").checked;
+          var color7 = document.getElementById("color7").checked;
+
+          dogName = [];
           window.open("feed.html");
       }
         document.getElementById("submit").addEventListener('click', new_dog);

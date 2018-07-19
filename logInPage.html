@@ -27,7 +27,7 @@
       </div>
       <div>
         <br>
-	<button id="submit">submit</button>
+	<button id="submit" onclick="window.open('introAcct.html', '_blank');">submit</button>
         <br>
       </div>
       <script>
@@ -43,7 +43,7 @@
 			document.getElementById("test").innerHTML = "Sorry, that's the wrong username/password. Please try again!";
 		}
 	}
-        	document.getElementById('submit').addEventListener('click', check_user);
+        	//document.getElementById('submit').addEventListener('click', check_user);
       </script>
       <div id="test"></div>
     </form>

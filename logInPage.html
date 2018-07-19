@@ -34,6 +34,7 @@
         function check_user() {
 		var maybe_user = document.getElementById('user-user').value;
 		var maybe_pass = document.getElementById('user-pass').value;
+		var user_database = global.localStorage.getItem("user_database");
 		if(user_database[maybe_user] == maybe_pass){
 			document.getElementById("test").innerHTML = "You logged in.";
 			window.open("introAcct.html");

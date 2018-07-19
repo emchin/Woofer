@@ -89,12 +89,11 @@
        <br>
        <br> 
       
-  <button type="button" id="submit">Submit 4</button>
+  <button type="button" id="submit">Submit 5</button>
 
      <script>
         function new_dog() {
           var dogName = document.getElementsByName("dogName").value;
-          dogName = [];
           
           var zipcode = document.getElementsByName("zipcode").value;
           var ownerName = document.getElementsByName("ownerName").value;
@@ -109,10 +108,10 @@
           var color6 = document.getElementsByName("color6").checked;
           var color7 = document.getElementsByName("color7").checked;
           var eyecolor = document.getElementsByName("dog-eye-colors").value;
-          var eyecolor = document.getElementsByName("dog-pattern").value;
-          var eyecolor = document.getElementsByName("dog-size").value;
+          var pattern = document.getElementsByName("dog-pattern").value;
+          var size = document.getElementsByName("dog-size").value;
 
-          dogName = [];
+          dogName = [zipcode, ownerName, contactInfo, color1, color2, color3, color4, color5, color6, color7, eyecolor, pattern, size];
           window.open("feed.html");
       }
         document.getElementById("submit").addEventListener('click', new_dog);

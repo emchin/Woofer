@@ -34,9 +34,10 @@
         function check_user() {
 		var maybe_user = document.getElementById('user-user').value;
 		var maybe_pass = document.getElementById('user-pass').value;
-		user_database = localStorage.getItem("user_check");
-		window.alert(user_database);
-		if(user_database[maybe_user]["password"] == maybe_pass){
+		var user_pass = localStorage.getItem("check_user");
+		user_pass = user_pass.split('/');
+		window.alert("hello");
+		if("hello" == maybe_pass){
 			document.getElementById("test").innerHTML = "You logged in.";
 			window.open("introAcct.html");
 		} else {

@@ -47,11 +47,14 @@
       Size:
       <br>    
         <form action="/action_page.php">
+            <select name="dog-eye-colors" >
+
             <option type="radio" value="Small">Less than 10lbs</option>
             <option type = "radio" value="Small-Medium">10-20lbs</option>
             <option type="radio" value="Medium">20-40lbs</option>
             <option type="radio" value="Medium-large">40-60lbs</option>
             <option type="radio" value="Large">60+lbs</option>
+          </select>
         </form>
        <br>
        <br>
@@ -85,8 +88,16 @@
           </form> 
       <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
        <br>
-       <br>                                                                                        
-  <button class = "main-button" onclick="window.open('feed.html', '_blank');">Submit</button>
+       <br> 
+     <script>
+        function new_user() {
+          var zipcode = document.getElementByName('zipcode').value;
+          var ownerName = document.getElementByName('ownerName').value;
+          localStorage.setItem(zipcode, ownerName);
+          window.open("feed.html");
+      }
+        document.getElementById("submit").addEventListener('click', new_user);
+      </script>
   </center>
 </body>
 </html>

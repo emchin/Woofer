@@ -39,72 +39,75 @@
 
         <br>
         <br>
-        Coat Colors:
-          <form action="/action_page.php">
-            <input type="checkbox" name="color1" value="Light-Brown"> Light Brown<br>
-            <input type="checkbox" name="color2" value="Dark-Brown"> Dark Brown<br>
-            <input type="checkbox" name="color3" value="Golden"> Golden<br>
-            <input type="checkbox" name="color4" value="Tan"> Tan<br>
-            <input type="checkbox" name="color5" value="White"> White<br>
-            <input type="checkbox" name="color6" value="Black"> Black<br>
-            <input type="checkbox" name="color7" value="Other"> Other<br><br>
-          </form>
-      </div>
-
-      <div>
-        Size:
-        <br>
         <div class="entire-thing">
           <div class="ad-left">
-            <form action="/action_page.php">
-              <select name="dog-sizes" multiple>
-                <option value="Small">Less than 10lbs</option>
-                <option value="Small-Medium">10-20lbs</option>
-                <option value="Medium">20-40lbs</option>
-                <option value="Medium-large">40-60lbs</option>
-                <option value="Large">60+lbs</option>
-              </select>                     
-            </form>
+            Coat Colors:
+              <form action="/action_page.php">
+                <input type="checkbox" name="color1" value="Light-Brown"> Light Brown<br>
+                <input type="checkbox" name="color2" value="Dark-Brown"> Dark Brown<br>
+                <input type="checkbox" name="color3" value="Golden"> Golden<br>
+                <input type="checkbox" name="color4" value="Tan"> Tan<br>
+                <input type="checkbox" name="color5" value="White"> White<br>
+                <input type="checkbox" name="color6" value="Black"> Black<br>
+                <input type="checkbox" name="color7" value="Other"> Other<br><br>
+              </form>
           </div>
-         <br>
-         <br>
-         Eye color:
-         <br>    
+          <br>
+          
           <div class="ad-right">
-            <form action="/action_page.php">
-              <select name="dog-eye-colors" multiple>
-                <option value="brown">Brown</option>
-                <option value="Blue">Blue</option>
-                <option value="Hazel">Hazel</option>
-                <option value="Gold">Gold</option>
-                <option value="Heterochromic">Heterochromic</option>
-                <option value="Other">Other</option>
-              </select>
-             </form>   
+            Coat pattern:
+            <br>    
+              <form action="/action_page.php">
+                <select name="dog-pattern" multiple>
+                  <option value="Solid">Solid</option>
+                  <option value="Bicolor">Bicolor</option>
+                  <option value="Tricolor">Tricolor</option>
+                  <option value="Merle">Merle</option>
+                  <option value="Tuxedo">Tuxedo</option>
+                  <option value="Spotted">Spotted</option>
+                  <option value="Speckled">Speckled</option>
+                  <option value="Sable">Sable</option>
+                  <option value="Other">Other</option>
+                </select>
+              </form> 
+
+          <div class="ad-left">
+            Size:
+            <br>
+              <form action="/action_page.php">
+                <select name="dog-sizes" multiple>
+                  <option value="Small">Less than 10lbs</option>
+                  <option value="Small-Medium">10-20lbs</option>
+                  <option value="Medium">20-40lbs</option>
+                  <option value="Medium-large">40-60lbs</option>
+                  <option value="Large">60+lbs</option>
+                </select>                     
+              </form>
+          </div>
+          <br>
+          <br>
+        
+          <div class="ad-right">
+            Eye color:
+            <br>    
+              <form action="/action_page.php">
+                <select name="dog-eye-colors" multiple>
+                  <option value="brown">Brown</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Hazel">Hazel</option>
+                  <option value="Gold">Gold</option>
+                  <option value="Heterochromic">Heterochromic</option>
+                  <option value="Other">Other</option>
+                </select>
+               </form>   
           </div>
          <div class="clear"></div>
-         </div>
-         <br>
-         Coat pattern:
-          <br>    
-            <form action="/action_page.php">
-              <select name="dog-pattern" multiple>
-                <option value="Solid">Solid</option>
-                <option value="Bicolor">Bicolor</option>
-                <option value="Tricolor">Tricolor</option>
-                <option value="Merle">Merle</option>
-                <option value="Tuxedo">Tuxedo</option>
-                <option value="Spotted">Spotted</option>
-                <option value="Speckled">Speckled</option>
-                <option value="Sable">Sable</option>
-                <option value="Other">Other</option>
-              </select>
-            </form> 
+         
       <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
       <br>
       <br>                                                                                        
       <button class = "main-button" onclick="window.open('feed.html', '_blank');">Submit</button>
-      </div>
+    </div>
   </center>
 </div>                                                                             
 </body>

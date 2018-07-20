@@ -19,7 +19,6 @@
     };
     firebase.initializeApp(config);
   </script>
-  <script src="index.js"></script>
   <title>Woofer - Sign Up</title>
 </head>
 <body>
@@ -32,7 +31,7 @@
     <br>
     <form>
       <div>
-        <b>Input a username:</b> <input type="text" name="username" id="username">
+        <b>Email:</b> <input type="text" name="username" id="username">
       </div>
       <br>
       <div>
@@ -48,19 +47,16 @@
         <button id="submit">Submit</button>
       </div>
       <script>
-        var user_info = {}
-        function new_user() {
-          var user_name = document.getElementById('username').value;
-          var pass = document.getElementById('password').value;
-          var user_pass = user_name + "/" + pass;
-          localStorage.setItem("check_user", user_pass);
-          //global.localStorage.setItem("user_database", user_database);
-          window.open("doneAcct.html");
-      }
-        document.getElementById("submit").addEventListener('click', new_user);
+        var email = document.getElementById('username').value;
+        var pass = document.getElementById('password').value;
+        firebase.auth().createUserWithEmailAndPassword(email, pass).catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          // ...
+        });
       </script>
       <br>
-      <div id="test"></div>
     </form> 
   </center>
 </body>

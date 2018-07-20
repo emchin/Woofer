@@ -16,7 +16,7 @@ body {
 
 .container {
   display: block;
-  position: relative;
+  position: center;
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
@@ -35,7 +35,7 @@ body {
 
 
 .checkmark {
-  position: absolute;
+  position: center;
   top: 0;
   left: 0;
   height: 25px;

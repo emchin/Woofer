@@ -9,20 +9,6 @@
 </head>
 <body>
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
-  <script src="/__/firebase/5.3.0/firebase-auth.js"></script>
-  <script>
-  // Initialize Firebase
-  // TODO: Replace with your project's customized code snippet
-  var config = {
-    apiKey: "<API_KEY>",
-    authDomain: "<PROJECT_ID>.firebaseapp.com",
-    databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
-    projectId: "<PROJECT_ID>",
-    storageBucket: "<BUCKET>.appspot.com",
-    messagingSenderId: "<SENDER_ID>",
-  };
-  firebase.initializeApp(config);
-</script>
   <center>
     <img id="big-logo" alt="Dog Logo" src="WooferLogo.jpg" width="20%" height="20%" onclick="window.open('index.html');">
     <br>
@@ -47,25 +33,7 @@
       <div>
         <button id='signup'>Submit</button>
       </div>
-      <script>
-        btn_signup.addEventListener('click', e=> {
-            //Get email and password:
-            const txt_email = document.getElementById('username');
-            const txt_pass = document.getElementById('password');
-            const btn_login = document.getElementById('login');
-            const btn_signup = document.getElementById('signup');
-            const email = txt_email.value;
-            const pass = txt_pass.value;
-            const auth = firebase.auth();
-            //Sign up!
-            firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-            // Handle Errors here.
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            // ...
-            });
-      });
-      </script>
+      <script src="index.js"></script>
       <br>
     </form> 
   </center>

@@ -117,7 +117,9 @@
             </select>
           </form> 
         <br>
-        <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput" onchange="readURL(this);" />
+	<!--This code below works!
+        <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput" onchange="readURL(this);" /> -->
+	<input type="file" onchange="readURL(this);" />
 	    <id="blah" src="#" alt="dog-image" />
         <br>
 	    <script>

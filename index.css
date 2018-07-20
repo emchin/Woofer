@@ -39,7 +39,7 @@ body {
 .checkmark {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 10;
   height: 25px;
   width: 25px;
   background-color: #eee;

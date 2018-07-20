@@ -121,6 +121,10 @@
         <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput" onchange="readURL(this);" /> -->
 	<input type='file' onchange="readURL(this);" />
 	<img id="preview" src="http://placehold.it/180" alt="image of dog" />
+	<style>
+	img{max-width:180px;}
+	input[type=file]{padding:10px;background:#2d2d2d;}
+	</style>
         <br>
         <br>
     </div>
@@ -144,7 +148,7 @@
                 reader.readAsDataURL(input.files[0]);
             }
         }
-	</script>
+	  </script>
 	<br>
   </center>
 	

@@ -47,17 +47,18 @@
         <button id="submit">Submit</button>
       </div>
       <script>
-        var email = document.getElementById('username').value;
-        var pass = document.getElementById('password').value;
         function create_account() {
+          var email = document.getElementById('username').value;
+          var pass = document.getElementById('password').value;
+          window.alert("Saved the variables!");
           firebase.auth().createUserWithEmailAndPassword(email, pass).catch(function(error) {
             // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
           }
-        document.getElementById("submit").addEventListener('click', create_account);                                                               
-          // ...
-        });
+          window.open("doneAcct.html");
+        });                                                                   
+        document.getElementById("submit").addEventListener('click', create_account);  
       </script>
       <br>
     </form> 

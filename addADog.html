@@ -125,11 +125,11 @@
         function new_dog() {
           var dogName = document.getElementsByName("dogName").value;
           
-          var zipcode = document.getElementsById("zipcode").value;
+          var zipcode = document.getElementById("zipcode").value;
           var ownerName = document.getElementsByName("ownerName").value;
           var contactInfo = document.getElementsByName("contactInfo").value;
           localStorage.setItem(zipcode, ownerName);
-          var color1 = document.getElementByName("color1").checked;
+          var color1 = document.getElementsByName("color1").checked;
           var color2 = document.getElementsByName("color2").checked;
           var color3 = document.getElementsByName("color3").checked;
           var color4 = document.getElementsByName("color4").checked;

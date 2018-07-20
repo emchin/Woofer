@@ -18,8 +18,8 @@
       //Add login event
       btn_login.addEventListener('click', e=> {
             //Get email and password:
-            const email = txt_email.value;
-            const pass = txt_pass.value;
+            const email = txt_email;
+            const pass = txt_pass;
             const auth = firebase.auth();
             //Sign in!
             const promise = auth.signInWithEmailAndPassword(email, pass);
@@ -29,8 +29,8 @@
       //Add signup event
       btn_signup.addEventListener('click', e=> {
             //Get email and password:
-            const email = txt_email.value;
-            const pass = txt_pass.value;
+            const email = txt_email;
+            const pass = txt_pass;
             const auth = firebase.auth();
             //Sign up!
             const promise = auth.createUserWithEmailAndPassword(email, pass);

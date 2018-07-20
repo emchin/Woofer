@@ -117,8 +117,24 @@
             </select>
           </form> 
         <br>
-        <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
+        <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput" onchange="readURL(this);" />
+	    <id="blah" src="#" alt="dog-image" />
         <br>
+	    <script>
+		         function readURL(input) {
+            			if (input.files && input.files[0]) {
+                			var reader = new FileReader();
+                			reader.onload = function (e) {
+                   				$('#blah')
+                        			.attr('src', e.target.result)
+                        			.width(150)
+                        			.height(200);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+	    </script>
         <br> 
     </div>
 	<form action= feed.html> 

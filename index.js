@@ -22,8 +22,7 @@
             const pass = txt_pass;
             const auth = firebase.auth();
             //Sign in!
-            const promise = auth.signInWithEmailAndPassword(email, pass);
-            promise.catch(e => console.log(e.message));
+            auth.signInWithEmailAndPassword(email, pass);
       });
       
       //Add signup event
@@ -33,8 +32,7 @@
             const pass = txt_pass;
             const auth = firebase.auth();
             //Sign up!
-            const promise = auth.createUserWithEmailAndPassword(email, pass);
-            promise.catch(e => console.log(e.message));
+            auth.createUserWithEmailAndPassword(email, pass);
       });
       
       //Add a realtime listener

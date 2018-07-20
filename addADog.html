@@ -115,12 +115,11 @@
               <option type="radio" value="Other">Other</option>
             </select>
           </form> 
-      <br>
       <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
        <br>
        <br> 
       
-  <button type="button" id="submit">Submit 25</button>
+  <button type="button" id="submit">Submit</button>
 
      <script>
 
@@ -144,7 +143,6 @@
           var image = document.getElementById("cameraInput");
 
           dogInfo = [dogName, zipcode, ownerName, contactInfo, color1, color2, color3, color4, color5, color6, color7, eyecolor, pattern, size, image];
-          window.alert(dogInfo[0]);
 
           window.open("dogProfile.html");
           

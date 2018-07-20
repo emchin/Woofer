@@ -118,16 +118,23 @@
           </form> 
         <br>
 	<!--This code below works! -->
-        <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput" onchange="readURL(this);" />
-	<img id="result" alt="image of dog" />
+        <input type='file' onchange="readURL(this);" />
+	<img id="blah" src="http://placehold.it/180" alt="your image" />
 
         <br>
         <br>
 	<script>
-     	  var loadFile = function(event) {
-    		var output = document.getElementById('result');
-    		output.src = URL.createObjectURL(event.target.files[0]);
-  	};
+     	  function readURL(input) {
+  		if (input.files && input.files[0]) {
+    			var reader = new FileReader();
+
+    			reader.onload = function(e) {
+      			$("#blah").attr("src", e.target.result);
+    			};
+
+    		reader.readAsDataURL(input.files[0]);
+  		}
+	}
 	  </script>
 	<br>
 	<br>

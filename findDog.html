@@ -121,9 +121,6 @@
         <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput" onchange="readURL(this);" /> -->
 	<input type='file' onchange="readURL(this);" />
 	<img id="blah" src="http://placehold.it/180" alt="image of dog" />
-	<style>
-	img{max-width:180px;}
-	</style>
         <br>
         <br>
     </div>
@@ -147,6 +144,9 @@
                 reader.readAsDataURL(input.files[0]);
             }
         }
+	$("#imgInp").change(function() {
+		readURL(this);
+	});
 	  </script>
 	<br>
   </center>

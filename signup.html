@@ -5,7 +5,7 @@
   <link rel="icon" href="WooferWindowLogo.jpg">
   <link rel="stylesheet" href="index.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  
+  //Adding firebase code below:
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
   <script>
     // Initialize Firebase
@@ -53,11 +53,11 @@
           window.alert("Saved the variables!");
           firebase.auth().createUserWithEmailAndPassword(email, pass).catch(function(error) {
             // Handle Errors here.
-            var errorCode = error.code;
-            var errorMessage = error.message;
-          }
+            var errorCode = "Fill this in later";
+            var errorMessage = "Fill this in later too!";
+          };
           window.open("doneAcct.html");
-        });                                                                   
+        };                                                                   
         document.getElementById("submit").addEventListener('click', create_account);  
       </script>
       <br>

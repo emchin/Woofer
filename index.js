@@ -12,9 +12,11 @@
 
       const txt_email = document.getElementById('username');
       const txt_pass = document.getElementById('password');
-      const create_acct = document.getElementById('submit')
-
-      create_acct.addEventListener('click', e=> {
+      const btn_login = document.getElementById('login');
+      const btn_signup = document.getElementById('signup');
+      
+      //Add login event
+      btn_login.addEventListener('click', e=> {
             //Get email and password:
             const email = txt_email.value;
             const pass = txt_pass.value;
@@ -23,4 +25,25 @@
             const promise = auth.signInWithEmailAndPassword(email, pass);
             promise.catch(e => console.log(e.message));
       });
+      
+      //Add signup event
+      btn_signup.addEventListener('click', e=> {
+            //Get email and password:
+            const email = txt_email.value;
+            const pass = txt_pass.value;
+            const auth = firebase.auth();
+            //Sign up!
+            const promise = auth.createUserWithEmailAndPassword(email, pass);
+            promise.catch(e => console.log(e.message));
+      });
+      
+      //Add a realtime listener
+      firebase.auth().onAuthStateChanged(firebaseUser => {
+            if(firebaseUser) {
+                  console.log(firebaseUser);
+            } else {
+                  console.log('Not logged in.');
+            }
+      });
+      
 }());     

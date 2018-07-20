@@ -48,12 +48,12 @@
         <button id='signup'>Submit</button>
       </div>
       <script>
-      const txt_email = document.getElementById('username');
-      const txt_pass = document.getElementById('password');
-      const btn_login = document.getElementById('login');
-      const btn_signup = document.getElementById('signup');
         btn_signup.addEventListener('click', e=> {
             //Get email and password:
+            const txt_email = document.getElementById('username');
+            const txt_pass = document.getElementById('password');
+            const btn_login = document.getElementById('login');
+            const btn_signup = document.getElementById('signup');
             const email = txt_email.value;
             const pass = txt_pass.value;
             const auth = firebase.auth();

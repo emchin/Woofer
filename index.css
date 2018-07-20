@@ -38,8 +38,9 @@ body {
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
+  text-align: center;
   top: 0;
-  left: 30px;
+  left: 0;
   height: 25px;
   width: 25px;
   background-color: #eee;

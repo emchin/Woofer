@@ -118,29 +118,28 @@
           </form> 
         <br>
 	<!--This code below works! -->
-        <input type='file' onchange="readURL(this);" />
-	<img id="blah" src="" alt="your image" />
+        <input type='file' onchange="preview_image(event)" />
+	<img id="output_image" src="" alt="your doggy image" />
 
         <br>
         <br>
-	<script>
-     	  function readURL(input) {
-  		if (input.files && input.files[0]) {
-    			var reader = new FileReader();
-
-    			reader.onload = function(e) {
-      			$("#blah").attr("src", e.target.result);
-    			};
-
-    		reader.readAsDataURL(input.files[0]);
-  		}
+	<script type='text/javascript'>
+	function preview_image(event) 
+	{
+	 var reader = new FileReader();
+	 reader.onload = function()
+	 {
+	  var output = document.getElementById('output_image');
+	  output.src = reader.result;
+	 }
+	 reader.readAsDataURL(event.target.files[0]);
 	}
-	  </script>
+	</script>
 	<br>
 	<br>
 	<br>
 	<form action= feed.html> 
-  	  <button type="submit" onclick="myFunction()">Submit</button>
+  	  <button type="submit">Submit</button>
 	</form>
 	<br>
   </center>

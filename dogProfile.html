@@ -13,7 +13,11 @@
     <img id="big-logo" alt="Dog Logo" src="WooferLogo.jpg" width="20%" height="20%" onclick="window.open('index.html');">
     <br>
     <script>
-    window.alert(dogName)
+     window.opener = myFunction()
+
+      myFunction(){
+        window.alert(dogName)
+      }
     </script>
     <br>
   </center>

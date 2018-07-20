@@ -58,10 +58,13 @@
             const pass = txt_pass.value;
             const auth = firebase.auth();
             //Sign up!
-            const promise = auth.createUserWithEmailAndPassword(email, pass);
-            promise.catch(e => console.log(e.message));
+            firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // ...
+            });
       });
-        });
       </script>
       <br>
     </form> 

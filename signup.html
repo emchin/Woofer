@@ -30,22 +30,9 @@
       <br>
       <br>
       <div>
-        <button id="submit">Submit</button>
+        <button id='submit'>Submit</button>
       </div>
-      <script>
-        function create_account() {
-          var email = document.getElementById('username').value;
-          var pass = document.getElementById('password').value;
-          window.alert("Saved the variables!");
-          firebase.auth().createUserWithEmailAndPassword(email, pass).catch(function(error) {
-            // Handle Errors here.
-            var errorCode = "Fill this in later";
-            var errorMessage = "Fill this in later too!";
-          }
-          window.open("doneAcct.html");
-        });                                                                   
-        document.getElementById("submit").addEventListener('click', create_account);  
-      </script>
+      <script src='index.js'></script>
       <br>
     </form> 
   </center>

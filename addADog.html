@@ -23,48 +23,48 @@
     <div class="user-input">
       Zipcode: <input type="text" id="zipcode">
       <br>
-      Owner's name: <input type="text" name="ownerName">
+      Owner's name: <input type="text" id="ownerName">
       <br>
-      Dog's name: <input type="text" name="dogName">
+      Dog's name: <input type="text" id="dogName">
       <br>
-      Your contact information (phone number, email, etc): <input type="text" name="contactInfo">
+      Your contact information (phone number, email, etc): <input type="text" id="contactInfo">
       <br>
                                                                                                         
       <br>
       <br>
       <center>
         Coat Colors:
-        <label class="container" name="color1">Light Brown
+        <label class="container" id="color1">Light Brown
           <input type="checkbox" checked="checked">
           <span class="checkmark"></span>
         </label>
 
-        <label class="container"name="color2">Dark Brown
+        <label class="container"id="color2">Dark Brown
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
 
-        <label class="container" name="color3">Golden
+        <label class="container" id="color3">Golden
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
 
-        <label class="container" name="color4">Tan
+        <label class="container" id="color4">Tan
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
 
-        <label class="container" name="color5">White
+        <label class="container" id="color5">White
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
 
-        <label class="container" name="color6">Black
+        <label class="container" id="color6">Black
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
 
-        <label class="container" name="color7">Other
+        <label class="container" id="color7">Other
           <input type="checkbox">
           <span class="checkmark"></span>
         </label>
@@ -76,7 +76,7 @@
       Size:
       <br>    
         <form action="/action_page.php">
-            <select name="dog-size" >
+            <select id="dog-size" >
 
             <option type="radio" value="Small">Less than 10lbs</option>
             <option type = "radio" value="Small-Medium">10-20lbs</option>
@@ -89,7 +89,7 @@
        Eye color:
        <br>    
          <form action="/action_page.php">
-           <select name="dog-eye-colors" >
+           <select id="dog-eye-colors" >
              <option type="radio" value="brown">Brown</option>
              <option type="radio" value="Blue">Blue</option>
              <option type="radio" value="Hazel">Hazel</option>
@@ -102,7 +102,7 @@
        Coat pattern:
         <br>    
           <form action="/action_page.php">
-            <select name="dog-pattern" >
+            <select id="dog-pattern" >
               <option type="radio" value="Solid">Solid</option>
               <option type="radio" value="Bicolor">Bicolor</option>
               <option type="radio" value="Tricolor">Tricolor</option>
@@ -118,7 +118,7 @@
        <br>
        <br> 
       
-  <button type="button" id="submit">Submit 20</button>
+  <button type="button" id="submit">Submit 21</button>
 
      <script>
 
@@ -126,19 +126,19 @@
           var dogName = document.getElementsByName("dogName").value;
           
           var zipcode = document.getElementById("zipcode").value;
-          var ownerName = document.getElementsByName("ownerName").value;
-          var contactInfo = document.getElementsByName("contactInfo").value;
+          var ownerName = document.getElementById("ownerName").value;
+          var contactInfo = document.getElementById("contactInfo").value;
           localStorage.setItem(zipcode, ownerName);
-          var color1 = document.getElementsByName("color1").checked;
-          var color2 = document.getElementsByName("color2").checked;
-          var color3 = document.getElementsByName("color3").checked;
-          var color4 = document.getElementsByName("color4").checked;
-          var color5 = document.getElementsByName("color5").checked;
-          var color6 = document.getElementsByName("color6").checked;
-          var color7 = document.getElementsByName("color7").checked;
-          var eyecolor = document.getElementsByName("dog-eye-colors").value;
-          var pattern = document.getElementsByName("dog-pattern").value;
-          var size = document.getElementsByName("dog-size").value;
+          var color1 = document.getElementById("color1").checked;
+          var color2 = document.getElementById("color2").checked;
+          var color3 = document.getElementById("color3").checked;
+          var color4 = document.getElementById("color4").checked;
+          var color5 = document.getElementById("color5").checked;
+          var color6 = document.getElementById("color6").checked;
+          var color7 = document.getElementById("color7").checked;
+          var eyecolor = document.getElementById("dog-eye-colors").value;
+          var pattern = document.getElementById("dog-pattern").value;
+          var size = document.getElementById("dog-size").value;
           var image = document.getElementById("cameraInput");
           window.alert(dogName);
 

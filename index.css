@@ -13,32 +13,7 @@ body {
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.ad-left {
-  float: left;
-}
 
-.ad-right {
-  float: right;
-  margin-left: 10px;
-}
-
-.entire-thing {
-  width: 650px;
-}
-
-@media only screen and (max-width: 1100px){
-	.main-button{text-align:center;display:flex;flex-wrap:wrap;width:70%;height:20%;}
-	.identify-dog{float:none;width:90%;}
-	.main-title{width:250%;height: 250%;}
-	.main-click:hover{box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
-	.main-space{width:100%;height: 100%;}
-	.create-account{text-align:center;display:flex;flex-wrap:wrap;width:100%;padding-bottom:10%;}
-	.foundInstrTxt{width:300%;height: 300%;}
-	#big-logo{height:200%}
-	body{background-color: #FF7C5D;}
-}
-
-/* Customize the label (the container) */
 .container {
   display: block;
   position: relative;
@@ -52,13 +27,13 @@ body {
   user-select: none;
 }
 
-/* Hide the browser's default radio button */
 .container input {
   position: absolute;
   opacity: 0;
+  cursor: pointer;
 }
 
-/* Create a custom radio button */
+
 .checkmark {
   position: absolute;
   top: 0;
@@ -66,7 +41,6 @@ body {
   height: 25px;
   width: 25px;
   background-color: #eee;
-  border-radius: 50%;
 }
 
 /* On mouse-over, add a grey background color */
@@ -74,31 +48,46 @@ body {
   background-color: #ccc;
 }
 
-/* When the radio button is checked, add a blue background */
+/* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #000000;
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
+/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the indicator (dot/circle) when checked */
+/* Show the checkmark when checked */
 .container input:checked ~ .checkmark:after {
   display: block;
 }
 
-/* Style the indicator (dot/circle) */
+/* Style the checkmark/indicator */
 .container .checkmark:after {
-  top: 9px;
   left: 9px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 1100px){
+	.main-button{text-align:center;display:flex;flex-wrap:wrap;width:70%;height:20%;}
+	.identify-dog{float:none;width:90%;}
+	.main-title{width:250%;height: 250%;}
+	.main-click:hover{box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
+	.main-space{width:100%;height: 100%;}
+	.create-account{text-align:center;display:flex;flex-wrap:wrap;width:100%;padding-bottom:10%;}
+	.foundInstrTxt{width:300%;height: 300%;}
+	#big-logo{height:200%}
+	body{background-color: #FF7C5D;}
 }
 
 

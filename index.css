@@ -18,7 +18,7 @@ body {
 .container {
   display: block;
   position: relative;
-  padding-left: 15px;
+  padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
@@ -39,7 +39,7 @@ body {
 .checkmark {
   position: absolute;
   top: 0;
-  left: 50;
+  left: 40;
   height: 25px;
   width: 25px;
   background-color: #eee;

@@ -28,23 +28,10 @@
       </div>
       <div>
         <br>
-	<button id="submit" onclick="window.open('introAcct.html', '_blank');">submit</button>
+	<button id="login" onclick="window.open('introAcct.html', '_blank');">Submit</button>
         <br>
       </div>
-      <script>
-        function check_user() {
-		var email = document.getElementById("user-user");
-		var pass = document.getElementById("user-pass");
-		firebase.auth().signInWithEmailAndPassword(email, pass).catch(function(error) {
-  		// Handle Errors here.
-  		var errorCode = error.code;
-  		var errorMessage = error.message;
-  		// ...
-		});
-	}
-        	document.getElementById('submit').addEventListener('click', check_user);
-      </script>
-      <div id="test"></div>
+      <script src="index.js"></script>
     </form>
   </center>
 </body>

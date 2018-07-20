@@ -19,7 +19,7 @@
     <br>
     <form>
       <div>
-        <b>Input a username:</b> <input type="text" name="username" id="user-user">
+        <b>Email:</b> <input type="text" name="username" id="user-user">
       </div>
       <br>
       <div>
@@ -32,18 +32,16 @@
       </div>
       <script>
         function check_user() {
-		var maybe_user = document.getElementById('user-user').value;
-		var maybe_pass = document.getElementById('user-pass').value;
-		var user_pass = localStorage.getItem("check_user");
-		user_pass = user_pass.split('/');
-		if("hello" == maybe_pass){
-			document.getElementById("test").innerHTML = "You logged in.";
-			window.open("introAcct.html");
-		} else {
-			document.getElementById("test").innerHTML = "Sorry, that's the wrong username/password. Please try again!";
-		}
+		var email = document.getElementById("user-user");
+		var pass = document.getElementById("user-pass");
+		firebase.auth().signInWithEmailAndPassword(email, pass).catch(function(error) {
+  		// Handle Errors here.
+  		var errorCode = error.code;
+  		var errorMessage = error.message;
+  		// ...
+		});
 	}
-        	//document.getElementById('submit').addEventListener('click', check_user);
+        	document.getElementById('submit').addEventListener('click', check_user);
       </script>
       <div id="test"></div>
     </form>

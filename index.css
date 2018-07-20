@@ -16,7 +16,7 @@ body {
 
 .container {
   display: block;
-  position: static;
+  position: fixed;
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
@@ -28,14 +28,14 @@ body {
 }
 
 .container input {
-  position: static;
+  position: fixed;
   opacity: 0;
   cursor: pointer;
 }
 
 
 .checkmark {
-  position: static;
+  position: fixed;
   top: 0;
   left: 0;
   height: 16px;

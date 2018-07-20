@@ -117,8 +117,10 @@
             </select>
           </form> 
         <br>
-	<!--This code below works! -->
-        <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput" onchange="readURL(this);" />
+	<!--This code below works!
+        <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput" onchange="readURL(this);" /> -->
+	<input type='file' onchange="readURL(this);" />
+	<img id="preview" src="http://placehold.it/180" alt="image of dog" />
         <br>
         <br>
     </div>
@@ -130,10 +132,18 @@
   	  <button type="submit" onclick="myFunction()">Submit</button>
 	</form>
 	<script>
-		function myFunction() {
-    			var x = document.getElementById("cameraInput");
-    			document.getElementById("demo").innerHTML = x;
-		}
+     	function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
 	</script>
 	<br>
   </center>

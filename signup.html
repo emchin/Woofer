@@ -47,7 +47,22 @@
       <div>
         <button id='signup'>Submit</button>
       </div>
-      <script src='index.js'></script>
+      <script>
+      const txt_email = document.getElementById('username');
+      const txt_pass = document.getElementById('password');
+      const btn_login = document.getElementById('login');
+      const btn_signup = document.getElementById('signup');
+        btn_signup.addEventListener('click', e=> {
+            //Get email and password:
+            const email = txt_email.value;
+            const pass = txt_pass.value;
+            const auth = firebase.auth();
+            //Sign up!
+            const promise = auth.createUserWithEmailAndPassword(email, pass);
+            promise.catch(e => console.log(e.message));
+      });
+        });
+      </script>
       <br>
     </form> 
   </center>

@@ -8,3 +8,17 @@ var config = {
       messagingSenderId: "723483471961"
 };
 firebase.initializeApp(config);
+
+const txt_email = document.getElementById('username');
+const txt_pass = document.getElementById('password');
+const create_acct = document.getElementById('submit')
+
+create_acct.addEventListener('click', e=> {
+      //Get email and password:
+      const email = txt_email.value;
+      const pass = txt_pass.value;
+      const auth = firebase.auth();
+      //Sign in!
+      const promise = auth.signInWithEmailAndPassword(email, pass);
+      promise.catch(e => console.log(e.message));
+});

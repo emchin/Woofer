@@ -11,8 +11,8 @@ body {
 
 /*This is the picture of the dog to add/identify.*/
 .dog-pic {
-	max-width: 200px;
-	max-height: 200px;
+	max-width: 350px;
+	max-height: 350px;
 }
 
 .main-click:hover{
@@ -88,6 +88,7 @@ body {
 
 @media only screen and (max-width: 1100px){
 	.main-button{text-align:center;display:flex;flex-wrap:wrap;width:70%;height:20%;}
+	.dog-pic{max-height:200px;max-width:200px;}
 	.identify-dog{float:none;width:90%;}
 	.main-title{width:250%;height: 250%;}
 	.main-click:hover{box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}

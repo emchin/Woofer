@@ -9,6 +9,12 @@ body {
     	flex-wrap: wrap;
 }
 
+/*This is the div containing the picture of the dog to add/identify.*/
+/*Increase the padding of the div to give it some space between the "choose file" and "submit" buttons.*/
+.dog-pic-div {
+	padding: 30%;
+}
+
 .main-click:hover{
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }

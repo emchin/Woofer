@@ -115,12 +115,29 @@
               <option type="radio" value="Other">Other</option>
             </select>
           </form> 
-      <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
-       <br>
-       <br> 
       
-  <button type="button" id="submit">Submit</button>
-
+      <!--Below: input file picture function, copy-pasted from "findDog.html" file-->
+      <div>
+      <input type='file' onchange="preview_image(event)" />
+      </div>
+      <br>
+      <div>
+        <img id="output_image" class="dog-pic" src="" alt="(Dog Image Here)"/>
+      </div>
+      <script type='text/javascript'>
+        function preview_image(event){
+          var reader = new FileReader();
+          reader.onload = function(){
+            var output = document.getElementById('output_image');
+            output.src = reader.result;
+          }
+          reader.readAsDataURL(event.target.files[0]);
+        }
+      </script>
+      <br>
+      <button type="button" id="submit">Submit</button>
+      <!--This is where the copy-pasting ends.-->
+      
      <script>
 
         function new_dog() {

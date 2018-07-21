@@ -11,8 +11,8 @@ body {
 
 /*This is the picture of the dog to add/identify.*/
 .dog-pic {
-	max-width: 150px;
-	max-height: 150px;
+	max-width: 200px;
+	max-height: 200px;
 }
 
 .main-click:hover{

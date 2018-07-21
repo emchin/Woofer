@@ -120,9 +120,8 @@
 	<div>
         <input type='file' onchange="preview_image(event)" />
 	</div>
-	<br>
 	<div>
-	<img id="output_image" class="dog-pic" src="" alt="(Dog Image Here)" height="25%" width="25%"/>
+	<img id="output_image" class="dog-pic" src="" alt="(Dog Image Here)"/>
 	</div>
 	<script type='text/javascript'>
 	function preview_image(event) 
@@ -136,8 +135,6 @@
 	 reader.readAsDataURL(event.target.files[0]);
 	}
 	</script>
-	<br>
-	<br>
 	<br>
 	<form action= feed.html> 
   	  <button type="submit">Submit</button>

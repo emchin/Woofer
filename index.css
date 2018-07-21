@@ -13,6 +13,8 @@ body {
 /*Increase the padding of the div to give it some space between the "choose file" and "submit" buttons.*/
 .dog-pic {
 	padding: 10%;
+	max-width:250px;
+	max-height: 250px;
 }
 
 .main-click:hover{

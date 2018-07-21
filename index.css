@@ -11,8 +11,8 @@ body {
 
 /*This is the div containing the picture of the dog to add/identify.*/
 /*Increase the padding of the div to give it some space between the "choose file" and "submit" buttons.*/
-.dog-pic-div {
-	padding: 30%;
+.dog-pic {
+	padding: 10%;
 }
 
 .main-click:hover{

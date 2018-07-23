@@ -13,9 +13,12 @@
 var foundDog = firebase.database().ref();
 
 const ref = database.ref('Dogs');
-ref.push({
+
+function add_info() {
+  ref.push({
   Snoopy : {
     owner-name: "Charlie Brown",
     owner-phone: "123-456-7890"
   }
 })
+}

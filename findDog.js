@@ -10,7 +10,7 @@
   firebase.initializeApp(config);
 
 // Get a reference to the database service
-var foundDog = firebase.database().ref();
+const database = firebase.database();
 
 const ref = database.ref('Dogs');
 
@@ -20,5 +20,5 @@ function add_info() {
     owner-name: "Charlie Brown",
     owner-phone: "123-456-7890"
   }
-})
-}
+});
+};

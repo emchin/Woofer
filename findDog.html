@@ -34,52 +34,52 @@
       <br>
       Dog's name: <input type="text" name="dogName" id="dog_name">
       <br>
-      Your phone number: <input type="text" name="contactInfo">
+      Your phone number: <input type="text" name="contactPhoneNumber" id="phone_num">
       <br>  
-      Your email: <input type="text" name="contactInfo">
+      Your email: <input type="text" name="contactEmail" id="email">
       <br> 
       <br>
       <br>
       Coat Colors: 
 	  <label class="container"><font size="-0.5">Light Brown </font>
 	  &nbsp;
-	  <input type="checkbox" name="color1" value="Light-Brown" checked="checked">
+	  <input type="checkbox" name="color1" value="light-brown-fur" id="light_brown"checked="checked">
 	  <span class="checkmark"></span>
 	</label>
 
 	  <label class="container"><font size="-0.5">Dark Brown </font>
 	  &nbsp;
-	  <input type="checkbox" name="color2" value="Dark-Brown">
+	  <input type="checkbox" name="color2" value="dark-brown-fur" id="dark_brown">
 	  <span class="checkmark"></span>
 	</label>
 
 	  <label class="container"><font size="-0.5">Golden </font>
 	  &nbsp;
-	  <input type="checkbox" name="color3" value="Golden">
+	  <input type="checkbox" name="color3" value="golden-fur" id="dark_brown">
 	  <span class="checkmark"></span>
 	</label>
 
 	<label class="container"><font size="-0.5">Tan </font>
 	&nbsp;
-	  <input type="checkbox" name="color4" value="Tan">
+	  <input type="checkbox" name="color4" value="tan-fur" id="tan">
 	  <span class="checkmark"></span>
 	</label>
 	   
 	<label class="container"><font size="-0.5">White </font>
 	&nbsp;
-	  <input type="checkbox" name="color5" value="White">
+	  <input type="checkbox" name="color5" value="white-fur" id="white">
 	  <span class="checkmark"></span>
 	</label>
 	   
 	<label class="container"><font size="-0.5">Black </font>
 	&nbsp;
-	  <input type="checkbox" name="color6" value="Black">
+	  <input type="checkbox" name="color6" value="black-fur" id="black">
 	  <span class="checkmark"></span>
 	</label>
 	   
 	<label class="container"><font size="-0.5">Other </font>
 	&nbsp;
-	  <input type="checkbox" name="color7" value="Other">
+	  <input type="checkbox" name="color7" value="other-fur" id="other">
 	  <span class="checkmark"></span>
 	</label>
     </div>
@@ -90,11 +90,11 @@
         <form action="/action_page.php">
             <select name="dog-eye-colors" >
 
-            <option type="radio" value="Small">Less than 10lbs</option>
-            <option type = "radio" value="Small-Medium">10-20lbs</option>
-            <option type="radio" value="Medium">20-40lbs</option>
-            <option type="radio" value="Medium-large">40-60lbs</option>
-            <option type="radio" value="Large">60+lbs</option>
+            <option type="radio" value="Small" id="small">Less than 10lbs</option>
+            <option type = "radio" value="Small-Medium" id="small-medium">10-20lbs</option>
+            <option type="radio" value="Medium" id="medium">20-40lbs</option>
+            <option type="radio" value="Medium-large" id="medium-large">40-60lbs</option>
+            <option type="radio" value="Large" id="large">60+lbs</option>
           </select>
         </form>
        <br>
@@ -102,12 +102,12 @@
        <br>    
          <form action="/action_page.php">
            <select name="dog-eye-colors" >
-             <option type="radio" value="brown">Brown</option>
-             <option type="radio" value="Blue">Blue</option>
-             <option type="radio" value="Hazel">Hazel</option>
-             <option type="radio" value="Gold">Gold</option>
-             <option type="radio" value="Heterochromic">Heterochromic</option>
-             <option type="radio" value="Other">Other</option>
+             <option type="radio" value="brown" id="brown-eye">Brown</option>
+             <option type="radio" value="Blue" id="blue-eye">Blue</option>
+             <option type="radio" value="Hazel" id="hazel-eye">Hazel</option>
+             <option type="radio" value="Gold" id="gold-eye">Gold</option>
+             <option type="radio" value="Heterochromic" id="hetero-eye">Heterochromic</option>
+             <option type="radio" value="Other" id="other-eye">Other</option>
            </select>
           </form>        
        <br>
@@ -115,15 +115,15 @@
         <br>    
           <form action="/action_page.php">
             <select name="dog-pattern" >
-              <option type="radio" value="Solid">Solid</option>
-              <option type="radio" value="Bicolor">Bicolor</option>
-              <option type="radio" value="Tricolor">Tricolor</option>
-              <option type="radio" value="Merle">Merle</option>
-              <option type="radio" value="Tuxedo">Tuxedo</option>
-              <option type="radio" value="Spotted">Spotted</option>
-              <option type="radio" value="Speckled">Speckled</option>
-              <option type="radio" value="Sable">Sable</option>
-              <option type="radio" value="Other">Other</option>
+              <option type="radio" value="Solid" id="solid">Solid</option>
+              <option type="radio" value="Bicolor" id="bicolor">Bicolor</option>
+              <option type="radio" value="Tricolor" id="tricolor">Tricolor</option>
+              <option type="radio" value="Merle" id="merle">Merle</option>
+              <option type="radio" value="Tuxedo" id="tuxedo">Tuxedo</option>
+              <option type="radio" value="Spotted" id="spotted">Spotted</option>
+              <option type="radio" value="Speckled" id="speckled">Speckled</option>
+              <option type="radio" value="Sable" id="speckled">Sable</option>
+              <option type="radio" value="Other" id="other-pattern">Other</option>
             </select>
           </form> 
         <br>
@@ -149,9 +149,8 @@
 	}
 	</script>
 	<br>
-	<!-- <form action= feed.html> -->
-	<form>
-  	  <button type="submit" onclick="add_snoopy()">Submit</button>
+	<form action= feed.html>
+  	  <button type="submit">Submit</button>
 	</form>
 	<br>
   </center>

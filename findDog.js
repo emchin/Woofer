@@ -15,7 +15,7 @@ function add_snoopy() {
   var database = firebase.database();
   var dogs = database.ref("Dogs");
 
-  var new_dog {
+  var new_dog = {
     name: "Snoopy";
      owner_name:"Charlie Brown";
   };

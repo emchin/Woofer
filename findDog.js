@@ -10,12 +10,27 @@
   firebase.initializeApp(config);
 
 // Get a reference to the database service
-var database = firebase.database();
+var foundDog = firebase.database().ref("foundDog");
 
-//Function to save information of found dog
-function saveFoundDog(zipcode_r, owner_name_r, dog_name_r, owner_phone_r, owner_email_r, coat_color_r, size_r, eye_color_r, coat_pattern_r) {
-  firebase.database.ref('\found-dog').set ({
-    zipcode_r : document.getElementById("zipcode");
-    owner_name_r : document.getElementById("owner_name");
-    dog_name_r : document.getElementById("dog_name");
-}
+// Save a new recommendation to the database, using the input in the form
+var submitFoundDog = function () {
+
+  // Get input values from each of the form elements
+  var zipcode = $("#zipcode").val();
+  var owner_name = $("#owner_name").val();
+  var dog_name = $("#dog_name").val();
+
+  // Push a new recommendation to the database using those values
+  foundDog.push({
+    "zipcode": zipcode,
+    "owner-name": owner_name,
+    "dog-name": dog_name
+  });
+};
+
+// When the window is fully loaded, call this function.
+// Note: because we are attaching an event listener to a particular HTML element
+// in this function, we can't do that until the HTML element in question has
+// been loaded. Otherwise, we're attaching our listener to nothing, and no code
+// will run when the submit button is clicked.
+$(window).load(function () {

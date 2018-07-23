@@ -18,21 +18,27 @@
     <br>
     <br>
     <br>
-    <form>
-      <div>
-        <b>Email:</b> <input type="text" name="username" id="user-user">
-      </div>
-      <br>
-      <div>
-        <b>Input a password: </b><input type="password" name="password" id="user-pass">
-      </div>
-      <div>
-        <br>
-	<button id="login">Submit</button>
-        <br>
-      </div>
-      <script src="index.js"></script>
-    </form>
+    </h1>
+	<form name="login">
+	Username<input type="text" name="userid"/>
+	Password<input type="password" name="pswrd"/>
+	<input type="button" onclick="check(this.form)" value="Login"/>
+	<input type="reset" value="Cancel"/>
+	</form>
+	<script language="javascript">
+	function check(form)/*function to check userid & password*/
+	{
+	 /*the following code checkes whether the entered userid and password are matching*/
+	 if(form.userid.value == "hi" && form.pswrd.value == "bye")
+	  {
+	    window.open('target.html')/*opens the target page while Id & password matches*/
+	  }
+	 else
+	 {
+	   alert("Error Password or Username")/*displays error message*/
+	  }
+	}
+	</script>
   </center>
 </body>
 </html>

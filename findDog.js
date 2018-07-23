@@ -11,11 +11,11 @@
 
 // Get a reference to the database service
 var database = firebase.database();
+var dogs = database.ref("Dogs");
 
-function writeUserData() {
-  firebase.database().ref('Dogs').set({
-    dog-name:'Snoopy',
-    owner-name:'Charlie Brown',
-    owner-phone:'123-456-7890'
-  });
-};
+var new_dog {
+  name: "Snoopy";
+  owner_name:"Charlie Brown";
+}
+
+dogs.push(new_dog);

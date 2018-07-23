@@ -28,58 +28,58 @@
    <b>Dog Identification</b>                    
    <br>
    <div class="user-input">
-      Zipcode: <input type="text" name="zipcode" id="zipcode">
+      Zipcode: <input type="text" name="zipcode" id="input_zipcode">
       <br>
-      Owner's name: <input type="text" name="ownerName" id="owner_name">
+      Owner's name: <input type="text" name="ownerName" id="input_owner_name">
       <br>
-      Dog's name: <input type="text" name="dogName" id="dog_name">
+      Dog's name: <input type="text" name="dogName" id="input_dog_name">
       <br>
-      Your phone number: <input type="text" name="contactPhoneNumber" id="phone_num">
+      Your phone number: <input type="text" name="contactPhoneNumber" id="input_phone_num">
       <br>  
-      Your email: <input type="text" name="contactEmail" id="email">
+      Your email: <input type="text" name="contactEmail" id="input_email">
       <br> 
       <br>
       <br>
       Coat Colors: 
 	  <label class="container"><font size="-0.5">Light Brown </font>
 	  &nbsp;
-	  <input type="checkbox" name="color1" value="light-brown-fur" id="light_brown"checked="checked">
+	  <input type="checkbox" name="color1" value="light-brown-fur" id="input_light_brown"checked="checked">
 	  <span class="checkmark"></span>
 	</label>
 
 	  <label class="container"><font size="-0.5">Dark Brown </font>
 	  &nbsp;
-	  <input type="checkbox" name="color2" value="dark-brown-fur" id="dark_brown">
+	  <input type="checkbox" name="color2" value="dark-brown-fur" id="input_dark_brown">
 	  <span class="checkmark"></span>
 	</label>
 
 	  <label class="container"><font size="-0.5">Golden </font>
 	  &nbsp;
-	  <input type="checkbox" name="color3" value="golden-fur" id="dark_brown">
+	  <input type="checkbox" name="color3" value="golden-fur" id="input_dark_brown">
 	  <span class="checkmark"></span>
 	</label>
 
 	<label class="container"><font size="-0.5">Tan </font>
 	&nbsp;
-	  <input type="checkbox" name="color4" value="tan-fur" id="tan">
+	  <input type="checkbox" name="color4" value="tan-fur" id="input_tan">
 	  <span class="checkmark"></span>
 	</label>
 	   
 	<label class="container"><font size="-0.5">White </font>
 	&nbsp;
-	  <input type="checkbox" name="color5" value="white-fur" id="white">
+	  <input type="checkbox" name="color5" value="white-fur" id="input_white">
 	  <span class="checkmark"></span>
 	</label>
 	   
 	<label class="container"><font size="-0.5">Black </font>
 	&nbsp;
-	  <input type="checkbox" name="color6" value="black-fur" id="black">
+	  <input type="checkbox" name="color6" value="black-fur" id="input_black">
 	  <span class="checkmark"></span>
 	</label>
 	   
 	<label class="container"><font size="-0.5">Other </font>
 	&nbsp;
-	  <input type="checkbox" name="color7" value="other-fur" id="other">
+	  <input type="checkbox" name="color7" value="other-fur" id="input_other">
 	  <span class="checkmark"></span>
 	</label>
     </div>
@@ -90,11 +90,11 @@
         <form action="/action_page.php">
             <select name="dog-eye-colors" >
 
-            <option type="radio" value="Small" id="small">Less than 10lbs</option>
-            <option type = "radio" value="Small-Medium" id="small-medium">10-20lbs</option>
-            <option type="radio" value="Medium" id="medium">20-40lbs</option>
-            <option type="radio" value="Medium-large" id="medium-large">40-60lbs</option>
-            <option type="radio" value="Large" id="large">60+lbs</option>
+            <option type="radio" value="Small" id="input_small">Less than 10lbs</option>
+            <option type = "radio" value="Small-Medium" id="input_small-medium">10-20lbs</option>
+            <option type="radio" value="Medium" id="input_medium">20-40lbs</option>
+            <option type="radio" value="Medium-large" id="input_medium-large">40-60lbs</option>
+            <option type="radio" value="Large" id="input_large">60+lbs</option>
           </select>
         </form>
        <br>
@@ -102,12 +102,12 @@
        <br>    
          <form action="/action_page.php">
            <select name="dog-eye-colors" >
-             <option type="radio" value="brown" id="brown-eye">Brown</option>
-             <option type="radio" value="Blue" id="blue-eye">Blue</option>
-             <option type="radio" value="Hazel" id="hazel-eye">Hazel</option>
-             <option type="radio" value="Gold" id="gold-eye">Gold</option>
-             <option type="radio" value="Heterochromic" id="hetero-eye">Heterochromic</option>
-             <option type="radio" value="Other" id="other-eye">Other</option>
+             <option type="radio" value="brown" id="input_brown-eye">Brown</option>
+             <option type="radio" value="Blue" id="input_blue-eye">Blue</option>
+             <option type="radio" value="Hazel" id="input_hazel-eye">Hazel</option>
+             <option type="radio" value="Gold" id="input_gold-eye">Gold</option>
+             <option type="radio" value="Heterochromic" id="input_hetero-eye">Heterochromic</option>
+             <option type="radio" value="Other" id="input_other-eye">Other</option>
            </select>
           </form>        
        <br>
@@ -115,15 +115,15 @@
         <br>    
           <form action="/action_page.php">
             <select name="dog-pattern" >
-              <option type="radio" value="Solid" id="solid">Solid</option>
-              <option type="radio" value="Bicolor" id="bicolor">Bicolor</option>
-              <option type="radio" value="Tricolor" id="tricolor">Tricolor</option>
-              <option type="radio" value="Merle" id="merle">Merle</option>
-              <option type="radio" value="Tuxedo" id="tuxedo">Tuxedo</option>
-              <option type="radio" value="Spotted" id="spotted">Spotted</option>
-              <option type="radio" value="Speckled" id="speckled">Speckled</option>
-              <option type="radio" value="Sable" id="speckled">Sable</option>
-              <option type="radio" value="Other" id="other-pattern">Other</option>
+              <option type="radio" value="Solid" id="input_solid">Solid</option>
+              <option type="radio" value="Bicolor" id="input_bicolor">Bicolor</option>
+              <option type="radio" value="Tricolor" id="input_tricolor">Tricolor</option>
+              <option type="radio" value="Merle" id="input_merle">Merle</option>
+              <option type="radio" value="Tuxedo" id="input_tuxedo">Tuxedo</option>
+              <option type="radio" value="Spotted" id="input_spotted">Spotted</option>
+              <option type="radio" value="Speckled" id="input_speckled">Speckled</option>
+              <option type="radio" value="Sable" id="input_sable">Sable</option>
+              <option type="radio" value="Other" id="input_other-pattern">Other</option>
             </select>
           </form> 
         <br>

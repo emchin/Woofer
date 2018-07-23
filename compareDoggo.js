@@ -1,9 +1,3 @@
-storage.clear();
-var randomNumber = 0;
-while (localStorage.getItem(localStorage.key(randomNumber)) != null) {
-  randomNumber += 1;
-}
-
 var dogName = document.getElementsByName("dogName").value;
 var zipcode = document.getElementsByName("zipcode").value;
 var ownerName = document.getElementsByName("ownerName").value;
@@ -20,7 +14,7 @@ var pattern = document.getElementsByName("dog-pattern").value;
 var size = document.getElementsByName("dog-size").value;
 
 var img = document.getElementById("output_image");
-var image = img.src;
+//var image = img.src;
 
 dogName = [zipcode, ownerName, contactInfo, color1, color2, color3, color4, color5, color6, color7, eyecolor, pattern, size, image];
 

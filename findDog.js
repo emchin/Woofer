@@ -18,7 +18,8 @@ function add_snoopy() {
   var new_dog {
     name: "Snoopy";
      owner_name:"Charlie Brown";
-  }
+  };
 
   dogs.push(new_dog);
+  alert("Hello2");
 }

@@ -10,15 +10,12 @@
   firebase.initializeApp(config);
 
 // Get a reference to the database service
-const database = firebase.database();
+var database = firebase.database();
 
-const ref = database.ref('Dogs');
-
-function add_info() {
-  ref.push({
-  Snoopy : {
-    owner-name: "Charlie Brown",
-    owner-phone: "123-456-7890"
-  }
-});
-};
+function writeUserData() {
+  firebase.database().ref('Dogs').set({
+    dog-name:'Snoopy',
+    owner-name:'Charlie Brown',
+    owner-phone:'123-456-7890'
+  });
+}

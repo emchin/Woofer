@@ -18,164 +18,135 @@
     <img alt="Add a Dog" class="main-button" src="addDogTxt.jpg" width="45%" height="45%";>
     <br>
     <br>
-    Dog Identification Form                         
-    <br>
-    <div class="user-input">
-      Zipcode: <input type="text" id="zipcode">
+       <b>Dog Identification</b>                    
+   <br>
+   <div class="user-input">
+      Zipcode: <input type="text" name="zipcode" id="zipcode">
       <br>
-      Owner's name: <input type="text" id="ownerName">
+      Owner's name: <input type="text" name="ownerName" id="owner_name">
       <br>
-      Dog's name: <input type="text" id="dogName">
+      Dog's name: <input type="text" name="dogName" id="dog_name">
       <br>
-      Your contact information (phone number, email, etc): <input type="text" id="contactInfo">
+      Your phone number: <input type="text" name="contactPhoneNumber" id="phone_num">
+      <br>  
+      Your email: <input type="text" name="contactEmail" id="email">
+      <br> 
       <br>
-                                                                                                        
       <br>
-      <br>
+      Coat Colors: 
+	  <label class="container"><font size="-0.5">Light Brown </font>
+	  &nbsp;
+	  <input type="checkbox" name="color1" value="light-brown-fur" id="light_brown"checked="checked">
+	  <span class="checkmark"></span>
+	</label>
 
-        Coat Colors:
-        <form action="/action_page.php">
-          <label class="container" id="color1"><font size="-0.5">Light Brown </font>
-            &nbsp;
-            <input type="checkbox" checked="checked">
-            <span class="checkmark"></span>
-          </label>
+	  <label class="container"><font size="-0.5">Dark Brown </font>
+	  &nbsp;
+	  <input type="checkbox" name="color2" value="dark-brown-fur" id="dark_brown">
+	  <span class="checkmark"></span>
+	</label>
 
-          <label class="container"id="color2"><font size="-0.5">Dark Brown </font>
-            &nbsp;
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label>
+	  <label class="container"><font size="-0.5">Golden </font>
+	  &nbsp;
+	  <input type="checkbox" name="color3" value="golden-fur" id="dark_brown">
+	  <span class="checkmark"></span>
+	</label>
 
-          <label class="container" id="color3"><font size="-0.5">Golden </font>
-            &nbsp;
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label>
-
-          <label class="container" id="color4"><font size="-0.5">Tan </font>
-            &nbsp;
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label>
-
-          <label class="container" id="color5"><font size="-0.5">White </font>
-            &nbsp;
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label>
-
-          <label class="container" id="color6"><font size="-0.5">Black </font>
-            &nbsp;
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label>
-
-          <label class="container" id="color7"><font size="-0.5">Other </font>
-            &nbsp;
-            <input type="checkbox">
-            <span class="checkmark"></span>
-          </label>
-        </form>
+	<label class="container"><font size="-0.5">Tan </font>
+	&nbsp;
+	  <input type="checkbox" name="color4" value="tan-fur" id="tan">
+	  <span class="checkmark"></span>
+	</label>
+	   
+	<label class="container"><font size="-0.5">White </font>
+	&nbsp;
+	  <input type="checkbox" name="color5" value="white-fur" id="white">
+	  <span class="checkmark"></span>
+	</label>
+	   
+	<label class="container"><font size="-0.5">Black </font>
+	&nbsp;
+	  <input type="checkbox" name="color6" value="black-fur" id="black">
+	  <span class="checkmark"></span>
+	</label>
+	   
+	<label class="container"><font size="-0.5">Other </font>
+	&nbsp;
+	  <input type="checkbox" name="color7" value="other-fur" id="other">
+	  <span class="checkmark"></span>
+	</label>
     </div>
-    <br>
                                                             
     <div>
       Size:
       <br>    
         <form action="/action_page.php">
-            <select id="dog-size" >
+            <select name="dog-eye-colors" >
 
-            <option type="radio" value="Small">Less than 10lbs</option>
-            <option type = "radio" value="Small-Medium">10-20lbs</option>
-            <option type="radio" value="Medium">20-40lbs</option>
-            <option type="radio" value="Medium-large">40-60lbs</option>
-            <option type="radio" value="Large">60+lbs</option>
+            <option type="radio" value="Small" id="small">Less than 10lbs</option>
+            <option type = "radio" value="Small-Medium" id="small-medium">10-20lbs</option>
+            <option type="radio" value="Medium" id="medium">20-40lbs</option>
+            <option type="radio" value="Medium-large" id="medium-large">40-60lbs</option>
+            <option type="radio" value="Large" id="large">60+lbs</option>
           </select>
         </form>
        <br>
        Eye color:
        <br>    
          <form action="/action_page.php">
-           <select id="dog-eye-colors" >
-             <option type="radio" value="brown">Brown</option>
-             <option type="radio" value="Blue">Blue</option>
-             <option type="radio" value="Hazel">Hazel</option>
-             <option type="radio" value="Gold">Gold</option>
-             <option type="radio" value="Heterochromic">Heterochromic</option>
-             <option type="radio" value="Other">Other</option>
+           <select name="dog-eye-colors" >
+             <option type="radio" value="brown" id="brown-eye">Brown</option>
+             <option type="radio" value="Blue" id="blue-eye">Blue</option>
+             <option type="radio" value="Hazel" id="hazel-eye">Hazel</option>
+             <option type="radio" value="Gold" id="gold-eye">Gold</option>
+             <option type="radio" value="Heterochromic" id="hetero-eye">Heterochromic</option>
+             <option type="radio" value="Other" id="other-eye">Other</option>
            </select>
           </form>        
        <br>
        Coat pattern:
         <br>    
           <form action="/action_page.php">
-            <select id="dog-pattern" >
-              <option type="radio" value="Solid">Solid</option>
-              <option type="radio" value="Bicolor">Bicolor</option>
-              <option type="radio" value="Tricolor">Tricolor</option>
-              <option type="radio" value="Merle">Merle</option>
-              <option type="radio" value="Tuxedo">Tuxedo</option>
-              <option type="radio" value="Spotted">Spotted</option>
-              <option type="radio" value="Speckled">Speckled</option>
-              <option type="radio" value="Sable">Sable</option>
-              <option type="radio" value="Other">Other</option>
+            <select name="dog-pattern" >
+              <option type="radio" value="Solid" id="solid">Solid</option>
+              <option type="radio" value="Bicolor" id="bicolor">Bicolor</option>
+              <option type="radio" value="Tricolor" id="tricolor">Tricolor</option>
+              <option type="radio" value="Merle" id="merle">Merle</option>
+              <option type="radio" value="Tuxedo" id="tuxedo">Tuxedo</option>
+              <option type="radio" value="Spotted" id="spotted">Spotted</option>
+              <option type="radio" value="Speckled" id="speckled">Speckled</option>
+              <option type="radio" value="Sable" id="speckled">Sable</option>
+              <option type="radio" value="Other" id="other-pattern">Other</option>
             </select>
           </form> 
-      <br>
-      
-      <!--Below: input file picture function, copy-pasted from "findDog.html" file-->
-      <div>
-      <input type='file' onchange="preview_image(event)" />
-      </div>
-      <br>
-      <div>
-        <img id="output_image" class="dog-pic" src="" alt="(Dog Image Here)"/>
-      </div>
-      <script type='text/javascript'>
-        function preview_image(event){
-          var reader = new FileReader();
-          reader.onload = function(){
-            var output = document.getElementById('output_image');
-            output.src = reader.result;
-          }
-          reader.readAsDataURL(event.target.files[0]);
-        }
-      </script>
-      <br>
-      <button type="button" id="submit">Submit</button>
-      <!--This is where the copy-pasting ends.-->
-      
-     <script>
-
-        function new_dog() {
-          var dogName = document.getElementById("dogName").value;
-          
-          var zipcode = document.getElementById("zipcode").value;
-          var ownerName = document.getElementById("ownerName").value;
-          var contactInfo = document.getElementById("contactInfo").value;
-          localStorage.setItem(zipcode, ownerName);
-          var color1 = document.getElementById("color1").checked;
-          var color2 = document.getElementById("color2").checked;
-          var color3 = document.getElementById("color3").checked;
-          var color4 = document.getElementById("color4").checked;
-          var color5 = document.getElementById("color5").checked;
-          var color6 = document.getElementById("color6").checked;
-          var color7 = document.getElementById("color7").checked;
-          var eyecolor = document.getElementById("dog-eye-colors").value;
-          var pattern = document.getElementById("dog-pattern").value;
-          var size = document.getElementById("dog-size").value;
-          var image = document.getElementById("cameraInput");
-
-          dogInfo = [dogName, zipcode, ownerName, contactInfo, color1, color2, color3, color4, color5, color6, color7, eyecolor, pattern, size, image];
-
-          window.open("dogProfile.html");
-          
-      }
-        document.getElementById("submit").addEventListener('click', new_dog);
-
-      </script>
-
-      </center>
+        <br>
+	<div>
+        <input type='file' onchange="preview_image(event)" />
+	</div>
+	<br>
+	<!--This is the script that SHOULD write to Firebase-->
+	<script src="findDog.js"></script>
+	<div>
+	<img id="output_image" class="dog-pic" src="" alt="(Dog Image Here)"/>
+	</div>
+	<script type='text/javascript'>
+	function preview_image(event) 
+	{
+	 var reader = new FileReader();
+	 reader.onload = function()
+	 {
+	  var output = document.getElementById('output_image');
+	  output.src = reader.result;
+	 }
+	 reader.readAsDataURL(event.target.files[0]);
+	}
+	</script>
+	<br>
+	    <script src="compareDog.js"></script>
+	<form action= feed.html>
+  	  <button type="submit">Submit</button>
+	</form>
+	<br>
+  </center>
 </body>
 </html>

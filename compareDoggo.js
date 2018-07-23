@@ -1,6 +1,7 @@
-var randomNumber = Math.floor(Math.random() * 200);
+storage.clear();
+var randomNumber = 0;
 while (localStorage.getItem(localStorage.key(randomNumber)) != null) {
-  randomNumber = Math.floor(Math.random() * 200);
+  randomNumber += 1;
 }
 
 var dogName = document.getElementsByName("dogName").value;

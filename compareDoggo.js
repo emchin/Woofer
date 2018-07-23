@@ -25,4 +25,6 @@ dogName = [zipcode, ownerName, contactInfo, color1, color2, color3, color4, colo
 
 localStorage.setItem(randomNumber, dogName);
 
-document.getElementById("result").innerHTML = zipcode;
+function print_result() {
+  document.getElementById("result").innerHTML = zipcode;
+}

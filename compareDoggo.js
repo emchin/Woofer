@@ -1,2 +1,2 @@
 var doggyData = JSON.parse(Doggo);
-alert(doggyData);
+alert(doggyData["dog-name"]);

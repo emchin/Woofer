@@ -10,27 +10,12 @@
   firebase.initializeApp(config);
 
 // Get a reference to the database service
-var foundDog = firebase.database().ref("foundDog");
+var foundDog = firebase.database().ref();
 
-// Save a new recommendation to the database, using the input in the form
-var submitFoundDog = function () {
-
-  // Get input values from each of the form elements
-  var zipcode = $("#zipcode").val();
-  var owner_name = $("#owner_name").val();
-  var dog_name = $("#dog_name").val();
-
-  // Push a new recommendation to the database using those values
-  foundDog.push({
-    "zipcode": zipcode,
-    "owner-name": owner_name,
-    "dog-name": dog_name
-  });
-};
-
-// When the window is fully loaded, call this function.
-// Note: because we are attaching an event listener to a particular HTML element
-// in this function, we can't do that until the HTML element in question has
-// been loaded. Otherwise, we're attaching our listener to nothing, and no code
-// will run when the submit button is clicked.
-$(window).load(function () {
+const ref = database.ref('Dogs');
+ref.push({
+  Snoopy : {
+    owner-name: "Charlie Brown",
+    owner-phone: "123-456-7890"
+  }
+})

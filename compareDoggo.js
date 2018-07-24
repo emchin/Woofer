@@ -1,5 +1,5 @@
-var num = 0
 function id_num() {
+  var num = 0
   if (localStorage.hasOwnProperty(num)) {
     num += 1;
   } else {

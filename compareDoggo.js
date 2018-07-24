@@ -1,6 +1,6 @@
 function id_num() {
   var num;
-  for (a = 0, localStorage.getItem(a) == "null", a++) {
+  for (a = 0; localStorage.getItem(a) == "null"; a++) {
     num = a;
   }
   return num;

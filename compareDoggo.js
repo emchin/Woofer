@@ -27,13 +27,13 @@ function set_dog() {
   var index = index1.stringify();
 
   dogName = [document.getElementsByName("dogName").value, zipcode, ownerName, contactInfo, color1, color2, color3, color4, color5, color6, color7, eyecolor, pattern, size, image];
-  
+  return dogName;
   localStorage.setItem(index, dogName);
   window.open("congrats_added.html");
   }
 
 function retrieve_dog() {
   //var message = '<h2> You added <h1>' + dogName[0] + '</h1> to our database!</h2> <br> <p> Well done! Now if ' + dogName[0] + ' happens to wander (or sneak) away, anyone with Internet access can use Woofer to get them home! </p>';
-  var message = set_dog();
+  var message = id_num();
   document.getElementById('congrats').innerHTML = message;
 }

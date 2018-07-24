@@ -1,4 +1,9 @@
 function set_dog() {
+  var num = 0
+  while (localStorage.getItem(num) != null) {
+    num += 1;
+  }
+  var index = num.stringify();
   
   var dogName = document.getElementsByName("dogName").value;
   var zipcode = document.getElementsByName("zipcode").value;
@@ -19,7 +24,7 @@ function set_dog() {
 
   dogName = [document.getElementsByName("dogName").value, zipcode, ownerName, contactInfo, color1, color2, color3, color4, color5, color6, color7, eyecolor, pattern, size, image];
   
-  localStorage.setItem('hello', dogName);
+  localStorage.setItem(index, dogName);
   }
 
 function retreive_dog(dogName) {

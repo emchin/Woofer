@@ -17,7 +17,6 @@ function set_dog() {
   var eyecolor = document.getElementsByName("dog-eye-colors").value;
   var pattern = document.getElementsByName("dog-pattern").value;
   var size = document.getElementsByName("dog-size").value;
-
   var img = document.getElementById("output_image");
   var image = img.src;
 

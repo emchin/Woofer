@@ -33,8 +33,11 @@
   function showInfo(data, tabletop) {
     alert('Successfully processed!');
     console.log(data);
-    var one = "<a>" + data["Dog Name"] + "</a>";
-    document.getElementById("dog_results").innerHTML = one;
+    var result;
+    for (i =0; i < data.length; i++) {
+      result += data[i].dname + "<br>";
+    }
+    document.getElementById("dog_results").innerHTML = result;
   }
   
   window.addEventListener('DOMContentLoaded', init);

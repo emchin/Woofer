@@ -1,4 +1,4 @@
-var index = function set_dog() {
+function set_dog() {
   var num = 0
   while (localStorage.getItem(num) != null) {
     num += 1;

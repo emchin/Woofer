@@ -1,7 +1,7 @@
 function id_num() {
-  var num = 0
-  while (localStorage.getItem(num) != "null") {
-    num += 1;
+  var num;
+  for (a = 0, localStorage.getItem(a) == "null", a++) {
+    num = a + 1;
   }
   return num;
 }

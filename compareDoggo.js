@@ -26,10 +26,11 @@ function set_dog() {
   
   localStorage.setItem(index, dogName);
   window.open("congrats_added.html");
+  return index
   }
 
-function retrieve_dog() {
+function retrieve_dog(index) {
   //var message = '<h2> You added <h1>' + dogName[0] + '</h1> to our database!</h2> <br> <p> Well done! Now if ' + dogName[0] + ' happens to wander (or sneak) away, anyone with Internet access can use Woofer to get them home! </p>';
-  var message = "Hello!"
+  var message = index;
   document.getElementById('congrats').innerHTML = message
 }

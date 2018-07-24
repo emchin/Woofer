@@ -1,1 +1,44 @@
+<!DOCTYPE html>
 
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="WooferWindowLogo.jpg">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <title>Woofer - Identify A Dog</title>
+</head>
+<body>
+  <center>
+    <img id="big-logo" alt="Dog Logo" src="WooferLogo.jpg" width="20%" height="20%" onclick="window.open('index.html');">
+    <br>
+    <br>
+    <br>
+    <br>
+    <img alt="Identify a Dog" class="main-button" src="identifyDogTxt.jpg" width="45%" height="45%";>
+    <br>
+    <br>              
+    <br>
+	  
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScCCMPrtkVYpSxda8k7UcgS3Rh6yYQf2x5mDsZqeEEV-9Bx9A/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <script type='text/javascript'>    
+    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1o_cyC-JCtYfpo0rjoz1HpwQ30FZdycNRTHrEnv76buU/edit?usp=sharing';
+    function init() {
+	    Tabletop.init( { key: publicSpreadsheetUrl,
+                     callback: showInfo,
+                     simpleSheet: true } )
+    }
+	   
+    function showInfo(data, tabletop) {
+	    alert('Successfully processed!')
+	    console.log(data);
+    }
+	  
+    <script src="compareDoggo.js"></script>
+    <br>
+    <a href="congrats_added.html"><button type="submit" onclick="set_dog">Submit</button></a>
+    <br>
+  </center>
+</body>
+</html>

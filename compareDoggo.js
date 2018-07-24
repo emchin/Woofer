@@ -13,13 +13,17 @@ var eyecolor = document.getElementsByName("dog-eye-colors").value;
 var pattern = document.getElementsByName("dog-pattern").value;
 var size = document.getElementsByName("dog-size").value;
 
-var img = document.getElementById("output_image");
+//var img = document.getElementById("output_image");
 //var image = img.src;
 
 dogName = [zipcode, ownerName, contactInfo, color1, color2, color3, color4, color5, color6, color7, eyecolor, pattern, size, image];
 
 localStorage.setItem(randomNumber, dogName);
 
-function print_result() {
-  document.getElementById("result").innerHTML = zipcode;
+function get_dog() {
+  var file = IO.getFile("Dog_Profiles", "dog.txt");
+  if (file.exists())
+    alert("The file is there!");
+  else
+    alert("File not found!");
 }

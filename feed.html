@@ -31,39 +31,13 @@
   }
 
   function showInfo(data, tabletop) {
-    alert('Successfully processed!')
+    alert('Successfully processed!');
     console.log(data);
-    return data;
+    var one = "<a>" + data["Dog Name"] + "</a>";
+    document.getElementById("dog_results").innerHTML = one;
   }
-    
-  function init_two() {
-    Tabletop.init( { key: publicSpreadsheetUrl_two,
-                     callback: showInfo,
-                     simpleSheet: true } )
-  }
-
-  function showInfo_two(given_info, tabletop) {
-    console.log(given_info);
-    return given_info;
-  }
-
-   function compareInfo() {
-     var dog_result;
-     var database = showInfo();
-     var given_dog = showInfo_two();
-     for (a = 0; a < database.length; a++) {
-       var count = 0;
-       for(b = 1; b <= 8; a++) {
-         if (database[a][b] == given_dog[a][b]) {
-           count += 1;
-         }
-       }
-       dog_result += database[a] + " " + count;
-     }
-     return dog_result;
-   }
-
-  window.addEventListener('DOMContentLoaded', compareInfo)
+  
+  window.addEventListener('DOMContentLoaded', init);
 </script>
   
   <!-- Ends here -->
@@ -72,6 +46,9 @@
   
   <!-- The "go back" button -->
   <div>
+  <br>
+  <br>
+    <div id="dog_results"></div>
     <center>
       <a href= "findDog.html"><img alt="Back" src="backB.jpg" width="10%" height="10%"></a>
     </center>

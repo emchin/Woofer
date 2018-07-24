@@ -28,7 +28,7 @@ function set_dog() {
   window.open("congrats_added.html");
   }
 
-function retrieve_dog(dogName) {
+function retrieve_dog() {
   //var message = '<h2> You added <h1>' + dogName[0] + '</h1> to our database!</h2> <br> <p> Well done! Now if ' + dogName[0] + ' happens to wander (or sneak) away, anyone with Internet access can use Woofer to get them home! </p>';
   var message = "Hello!"
   document.getElementById('congrats').innerHTML = message

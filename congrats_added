@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="WooferWindowLogo.jpg">
+  <link rel="stylesheet" href="index.css">
+  <title>Woofer - Home</title>
+</head>
+<body>
+  <center>
+    <script src="compareDoggo.js"></script>
+    <a href="index.html"><img id="big-logo" alt="Dog Logo" src="WooferLogo.jpg" width="50%" height="50%"></a>
+    <div></div>
+    <button>Back to Your Account</button>
+  </center>
+</body>
+</html>

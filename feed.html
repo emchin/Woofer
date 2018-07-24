@@ -34,7 +34,7 @@
     console.log(data);
     var result = "";
     for (i =0; i < data.length; i++) {
-      result += "<h4 style='color:white;''font-size:32px'>" + data[i].dname + "</h4>" + "<br>";
+      result += "<h4 style='color:white;''font-size:32px'>" + "<a href='#'>" + data[i].dname + "</a>" + "</h4>" + "<br>";
     }
     document.getElementById("dog_results").innerHTML = result;
   }

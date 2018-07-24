@@ -1,6 +1,5 @@
 function set_dog() {
-  
-  alert("hi!");
+
   var dogName = document.getElementsByName("dogName").value;
   var zipcode = document.getElementsByName("zipcode").value;
   var ownerName = document.getElementsByName("ownerName").value;
@@ -18,9 +17,9 @@ function set_dog() {
   var img = document.getElementById("output_image");
   var image = img.src;
 
-  //dogName = [document.getElementsByName("dogName").value, zipcode, ownerName, contactInfo, color1, color2, color3, color4, color5, color6, color7, eyecolor, pattern, size, image];
+  dogName = [document.getElementsByName("dogName").value, zipcode, ownerName, contactInfo, color1, color2, color3, color4, color5, color6, color7, eyecolor, pattern, size, image];
   
-  //localStorage.setItem('hello', dogName);
+  localStorage.setItem('hello', dogName);
   }
 
 function retreive_dog(dogName[0]) {

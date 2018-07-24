@@ -1,0 +1,1 @@
+var Snoopy = {"owner-name" : "Charlie Brown", "size" : "medium-small"}

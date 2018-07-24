@@ -1,6 +1,6 @@
 function id_num() {
   var num = 0
-  while (localStorage.getItem(num.stringify()) != null) {
+  while (localStorage.getItem(num) != null) {
     num += 1;
   }
   return num;
@@ -23,8 +23,7 @@ function set_dog() {
   var size = document.getElementsByName("dog-size").value;
   var img = document.getElementById("output_image");
   var image = img.src;
-  var index1 = id_num();
-  var index = index1.stringify();
+  var index = id_num();
 
   dogName = [document.getElementsByName("dogName").value, zipcode, ownerName, contactInfo, color1, color2, color3, color4, color5, color6, color7, eyecolor, pattern, size, image];
   return dogName;

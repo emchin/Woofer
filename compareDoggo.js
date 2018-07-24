@@ -1,9 +1,6 @@
 function set_dog() {
-  var randomNumber = 0;
-  while (localStorage.getItem(randomNumber) != null) {
-    randomNumber += 1;
   
-  alert(randomNumber);
+  alert("hi!");
   var dogName = document.getElementsByName("dogName").value;
   var zipcode = document.getElementsByName("zipcode").value;
   var ownerName = document.getElementsByName("ownerName").value;
@@ -23,10 +20,10 @@ function set_dog() {
 
   dogName = [document.getElementsByName("dogName").value, zipcode, ownerName, contactInfo, color1, color2, color3, color4, color5, color6, color7, eyecolor, pattern, size, image];
   
-  localStorage.setItem(randomNumber, dogName);
+  localStorage.setItem('hello', dogName);
   }
 
 function retreive_dog(dogName[0]) {
-  var message = '<h2> You added <h1>' + dogName[0] + '</h1> to our database!</h2> <br> <p> Well done! Now if </p>' + dogName[0] ' happens to wander (or sneak) away, anyone with Internet access can use Woofer to get them home!';
+  var message = '<h2> You added <h1>' + hello[0] + '</h1> to our database!</h2> <br> <p> Well done! Now if </p>' + dogName[0] ' happens to wander (or sneak) away, anyone with Internet access can use Woofer to get them home!';
   document.getElementById('congrats').innerHTML = message
 }

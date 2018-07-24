@@ -10,7 +10,7 @@
   <center>
     <script src="compareDoggo.js"></script>
     <a href="index.html"><img id="big-logo" alt="Dog Logo" src="WooferLogo.jpg" width="50%" height="50%"></a>
-    <div></div>
+    <div id='congrats'></div>
     <button>Back to Your Account</button>
   </center>
 </body>

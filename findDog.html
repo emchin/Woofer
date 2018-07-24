@@ -20,21 +20,22 @@
     <img alt="Please fill out as much of the following information as you can." class="main-button" src="foundInstr.jpg" width="40%" height="40%";>
     <br>
     <br>
-	  
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScCCMPrtkVYpSxda8k7UcgS3Rh6yYQf2x5mDsZqeEEV-9Bx9A/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-    <script type='text/javascript'>    
-    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1o_cyC-JCtYfpo0rjoz1HpwQ30FZdycNRTHrEnv76buU/edit?usp=sharing';
-    function init() {
-	    Tabletop.init( { key: publicSpreadsheetUrl,
-                     callback: showInfo,
-                     simpleSheet: true } )
-    }
-	   
-    function showInfo(data, tabletop) {
-	    alert('Successfully processed!')
-	    console.log(data);
-    }
+    <div id="google-form"> 
+	    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScCCMPrtkVYpSxda8k7UcgS3Rh6yYQf2x5mDsZqeEEV-9Bx9A/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+	    <script type='text/javascript'>    
+	    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1o_cyC-JCtYfpo0rjoz1HpwQ30FZdycNRTHrEnv76buU/edit?usp=sharing';
+	    function init() {
+		    Tabletop.init( { key: publicSpreadsheetUrl,
+			     callback: showInfo,
+			     simpleSheet: true } )
+	    }
+
+	    function showInfo(data, tabletop) {
+		    alert('Successfully processed!')
+		    console.log(data);
+	    }
+    </div>
 	  
     <script src="compareDoggo.js"></script>
     <br>

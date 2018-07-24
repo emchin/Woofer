@@ -1,9 +1,11 @@
 function id_num() {
-  var num;
-  for (a = 0; localStorage.getItem(a) == "null"; a++) {
-    num = a;
+  num = 0
+  if (num in localStorage) {
+    num += 1;
+  } else {
+    localStorage.setItem(num, "blank")
+    return num;
   }
-  return num;
 }
 
 function set_dog() {

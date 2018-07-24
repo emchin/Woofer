@@ -47,21 +47,21 @@
     return given_info;
   }
 
-//   function compareInfo() {
-//     var dog_result;
-//     var database = showInfo();
-//     var given_dog = showInfo_two();
-//     for (a = 0; a < data.length; a++) {
-//       var count = 0;
-//       for(b = 1; b <= 8; a++) {
-//         if (database[a][b] == given_dog[a][b]) {
-//           count += 1;
-//         }
-//       }
-//       dog_result += database[a] + " " + count;
-//     }
-//     return dog_result;
-//   }
+   function compareInfo() {
+     var dog_result;
+     var database = showInfo();
+     var given_dog = showInfo_two();
+     for (a = 0; a < data.length; a++) {
+       var count = 0;
+       for(b = 1; b <= 8; a++) {
+         if (database[a][b] == given_dog[a][b]) {
+           count += 1;
+         }
+       }
+       dog_result += database[a] + " " + count;
+     }
+     return dog_result;
+   }
 
   window.addEventListener('DOMContentLoaded', init)
 </script>

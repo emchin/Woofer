@@ -1,5 +1,6 @@
 function set_dog() {
-
+  
+  alert("Ruff!");
   var dogName = document.getElementsByName("dogName").value;
   var zipcode = document.getElementsByName("zipcode").value;
   var ownerName = document.getElementsByName("ownerName").value;

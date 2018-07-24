@@ -1,10 +1,8 @@
-num = 0
+var num = 0
 function id_num() {
-  if (num in localStorage) {
+  if (localStorage.hasOwnProperty(num)) {
     num += 1;
-    id_num();
   } else {
-    localStorage.setItem(num, "blank")
     return num;
   }
 }

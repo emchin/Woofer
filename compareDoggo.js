@@ -1,7 +1,8 @@
+num = 0
 function id_num() {
-  num = 0
   if (num in localStorage) {
     num += 1;
+    id_num();
   } else {
     localStorage.setItem(num, "blank")
     return num;

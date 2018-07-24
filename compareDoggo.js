@@ -3,7 +3,6 @@ function set_dog() {
   while (localStorage.getItem(num) != null) {
     num += 1;
   }
-  num = num.stringify();
   return num;
 }
   
@@ -23,6 +22,8 @@ function set_dog() {
   var size = document.getElementsByName("dog-size").value;
   var img = document.getElementById("output_image");
   var image = img.src;
+  var index1 = set_dog();
+  var index = index1.stringify();
 
   dogName = [document.getElementsByName("dogName").value, zipcode, ownerName, contactInfo, color1, color2, color3, color4, color5, color6, color7, eyecolor, pattern, size, image];
   
@@ -32,6 +33,6 @@ function set_dog() {
 
 function retrieve_dog() {
   //var message = '<h2> You added <h1>' + dogName[0] + '</h1> to our database!</h2> <br> <p> Well done! Now if ' + dogName[0] + ' happens to wander (or sneak) away, anyone with Internet access can use Woofer to get them home! </p>';
-  var message = index;
-  document.getElementById('congrats').innerHTML = message
+  var message = set_dog();
+  document.getElementById('congrats').innerHTML = message;
 }

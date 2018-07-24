@@ -4,6 +4,8 @@ var index = function set_dog() {
     num += 1;
   }
   num = num.stringify();
+  return num;
+}
   
   var dogName = document.getElementsByName("dogName").value;
   var zipcode = document.getElementsByName("zipcode").value;

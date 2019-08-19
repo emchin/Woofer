@@ -8,4 +8,4 @@ Created by Emily Chin, Nivrithi Krishnan and Jennifer Zwiebel
 
 ![alt text][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Woofer Icon"
+[logo]: https://github.com/emchin/Woofer/blob/gh-pages/WooferLogo.jpg "Woofer Icon"
